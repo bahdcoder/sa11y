@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)https://adonisjs.com/ -->
+<html lang="en" up-source="/"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_1SZFPB"></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AdonisJS - A fully featured web framework for Node.js</title>
+    <meta name="description" content="AdonisJS is a TypeScript-first web framework for building web apps and API servers. It comes with support for testing, modern tooling, an ecosystem of official packages, and more.">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://adonisjs.com/feeds/blog.xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://adonisjs.com/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://adonisjs.com/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://adonisjs.com/icons/favicon-16x16.png">
+    <link rel="manifest" href="https://adonisjs.com/icons/site.webmanifest">
+    <link rel="mask-icon" href="https://adonisjs.com/icons/safari-pinned-tab.svg" color="#865bd5">
+    <link rel="shortcut icon" href="https://adonisjs.com/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="twitter:title" content="AdonisJS - A fully featured web framework for Node.js">
+    <meta name="twitter:description" content="AdonisJS is a TypeScript-first web framework for building web apps and API servers. It comes with support for testing, modern tooling, an ecosystem of official packages, and more.">
+    <meta name="twitter:image" content="https://adonisjs.com/home_og_image.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@adonisframework">
+    <meta name="twitter:creator" content="@adonisframework">
+
+    <meta property="og:title" content="AdonisJS - A fully featured web framework for Node.js">
+    <meta property="og:description" content="AdonisJS is a TypeScript-first web framework for building web apps and API servers. It comes with support for testing, modern tooling, an ecosystem of official packages, and more.">
+    <meta property="og:image" content="https://adonisjs.com/home_og_image.jpeg">
+    <meta property="og:type" content="article">
+
+    <link rel="canonical" href="https://adonisjs.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link rel="stylesheet" href="./AdonisJS - A fully featured web framework for Node.js_files/css2">
+    <link rel="me" href="https://fosstodon.org/@adonisframework"><link rel="preload" as="style" href="./AdonisJS - A fully featured web framework for Node.js_files/app-BmAY9pRZ.css">
+<link rel="modulepreload" href="./AdonisJS - A fully featured web framework for Node.js_files/app-y4tHmmtj.js">
+<script type="module" defer="" src="./AdonisJS - A fully featured web framework for Node.js_files/app-y4tHmmtj.js"></script>
+<link rel="stylesheet" href="./AdonisJS - A fully featured web framework for Node.js_files/app-BmAY9pRZ.css">
+  <style>
+@keyframes slide-in-one-tap {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.trust-hide-gracefully {
+  opacity: 0;
+}
+
+.trust-wallet-one-tap .hidden {
+    display: none;
+  }
+
+.trust-wallet-one-tap .semibold {
+    font-weight: 500;
+  }
+
+.trust-wallet-one-tap .binance-plex {
+    font-family: 'Binance';
+  }
+
+.trust-wallet-one-tap .rounded-full {
+    border-radius: 50%;
+  }
+
+.trust-wallet-one-tap .flex {
+    display: flex;
+  }
+
+.trust-wallet-one-tap .flex-col {
+    flex-direction: column;
+  }
+
+.trust-wallet-one-tap .items-center {
+    align-items: center;
+  }
+
+.trust-wallet-one-tap .space-between {
+    justify-content: space-between;
+  }
+
+.trust-wallet-one-tap .justify-center {
+    justify-content: center;
+  }
+
+.trust-wallet-one-tap .w-full {
+    width: 100%;
+  }
+
+.trust-wallet-one-tap .box {
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+    animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+    width: 384px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1020;
+  }
+
+.trust-wallet-one-tap .header {
+    gap: 15px;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px 18px;
+  }
+
+.trust-wallet-one-tap .header .left-items {
+      gap: 15px
+    }
+
+.trust-wallet-one-tap .header .title {
+      color: #1E2329;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+
+.trust-wallet-one-tap .header .subtitle {
+      color: #474D57;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .header .close {
+      color: #1E2329;
+      cursor: pointer;
+    }
+
+.trust-wallet-one-tap .body {
+    padding: 9px 18px;
+    gap: 10px;
+
+  }
+
+.trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
+    }
+
+.trust-wallet-one-tap .body .right-items .wallet-title {
+        color: #1E2329;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .body .right-items .wallet-subtitle {
+        color: #474D57;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .connect-indicator {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+.trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474D57;
+    }
+
+.trust-wallet-one-tap .loading-color {
+    color: #FFF;
+  }
+
+.trust-wallet-one-tap .button {
+    border-radius: 50px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(5, 0, 255);
+    border-color: rgb(229, 231, 235);
+    cursor: pointer;
+    text-align: center;
+    height: 45px;
+  }
+
+.trust-wallet-one-tap .button .button-text {
+      color: #FFF;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .footer {
+    margin: 20px 30px;
+  }
+
+.trust-wallet-one-tap .check-icon {
+    color: #FFF;
+  }
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Regular.otf) format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-Medium.otf) format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url(chrome-extension://egjidjbpglichdcondbcbdnbeeppgdph/fonts/BinancePlex-SemiBold.otf) format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+</style><style>@keyframes _spin_evhv6_1{0%{transform:rotate(0)}to{transform:rotate(360deg)}}@keyframes _wave_evhv6_1{0%{transform:rotate(0)}50%{transform:rotate(20deg)}to{transform:rotate(0)}}@keyframes _heartBeat_evhv6_1{0%{transform:scale(1)}50%{transform:scale(1.08)}to{transform:scale(1)}}@keyframes _flash_evhv6_1{0%,50%,to{opacity:1}25%,75%{opacity:.2}}@keyframes _bounce_evhv6_1{0%,20%,53%,to{transform:translateZ(0)}40%,43%{transform:translate3d(0,-30px,0) scaleY(1.1)}70%{transform:translate3d(0,-15px,0) scaleY(1.05)}80%{transform:translateZ(0) scaleY(.95)}90%{transform:translate3d(0,-4px,0) scaleY(1.02)}}@keyframes _rubberBand_evhv6_1{0%{transform:scaleZ(1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}to{transform:scaleZ(1)}}@keyframes _headShake_evhv6_1{0%{transform:translate(0)}6.5%{transform:translate(-6px) rotateY(-9deg)}18.5%{transform:translate(5px) rotateY(7deg)}31.5%{transform:translate(-3px) rotateY(-5deg)}43.5%{transform:translate(2px) rotateY(3deg)}50%{transform:translate(0)}}@keyframes _tada_evhv6_1{0%{transform:scaleZ(1)}10%,20%{transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg)}30%,50%,70%,90%{transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg)}40%,60%,80%{transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg)}to{transform:scaleZ(1)}}._overlay_evhv6_157{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1000000006;display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;background-color:#0f0f0f99}._layoutDefault_evhv6_170{position:fixed;right:20px;bottom:20px;z-index:2147483000;width:auto;height:auto;max-width:95vw;display:-ms-flexbox;display:flex;background-color:transparent;border-radius:5px;box-shadow:#0f0f0f0d 0 0 0 1px,#0f0f0f1a 0 3px 6px,#0f0f0f33 0 9px 24px;opacity:0}._layoutModal_evhv6_186{position:relative;z-index:2147483000;width:700px;height:auto;max-width:95vw;display:-ms-flexbox;display:flex;background-color:transparent;border-radius:5px;box-shadow:#0f0f0f0d 0 0 0 1px,#0f0f0f1a 0 3px 6px,#0f0f0f33 0 9px 24px;opacity:0}._popupContainer_evhv6_200{display:-ms-flexbox;display:flex;width:100%;border-radius:5px;overflow-y:auto}._popupContainer_evhv6_200 iframe{border-radius:5px;max-height:95vh}._loadingIndicator_evhv6_212{position:absolute;z-index:2147483000;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:50px;height:50px;border-radius:50%;color:#444;background-color:#f5f5f5}._loadingIndicatorNoOverlay_evhv6_225{position:fixed;right:10px;bottom:10px}._loadingIndicator_evhv6_212 svg{width:20px;height:20px;animation:_spin_evhv6_1 1.618s linear infinite}._emoji_evhv6_237{position:absolute;top:-21px;left:-21px;display:inline-block;font-size:42px;line-height:1}._animate__wave_evhv6_246{animation:_wave_evhv6_1 1s ease-in-out 20}._animate__heart-beat_evhv6_250{animation:_heartBeat_evhv6_1 1.3s ease-in-out 20}._animate__flash_evhv6_254{animation:_flash_evhv6_1 2.5s 20}._animate__bounce_evhv6_258{animation:_bounce_evhv6_1 1.5s 20;-ms-transform-origin:center bottom;transform-origin:center bottom}._animate__rubber-band_evhv6_263{animation:_rubberBand_evhv6_1 1.5s 20}._animate__head-shake_evhv6_267{animation:_headShake_evhv6_1 1.5s ease-in-out 20}._animate__tada_evhv6_271{animation:_tada_evhv6_1 1.5s 20}._animate__spin_evhv6_275{animation:_spin_evhv6_1 1.618s linear 20}@media (max-height: 1000px){._popupContainer_evhv6_200 iframe{max-height:85vh}}@media (max-width: 576px){._popupContainer_evhv6_200 iframe{max-height:70vh}._layoutDefault_evhv6_170,._layoutModal_evhv6_186{max-width:calc(100% - 40px)}}
+/*$vite$:1*/</style></head>
+  <body class="font-sans antialiased text-sand11 h-full" x-data="{
+      mobileNavExpanded: false
+    }" :class="{ &#39;overflow-hidden&#39;: mobileNavExpanded }" @location-changed.window="mobileNavExpanded = false" cz-shortcut-listen="true"><section class="p-4 text-center border border-b-gray-300">
+  Looking to migrate your application to AdonisJS 6? Checkout <a class="underline" href="https://v6-migration.adonisjs.com/" target="_blank">our migration guide</a>!
+</section>
+
+
+    <div class="relative bg-gradient-to-b from-sand1 to-sand2">
+  <div class="absolute inset-0 justify-center pointer-events-none hidden lg:flex" style="--marker-color: var(--sand-5)">
+    <div class="content-container relative h-full w-full guides_markers"></div>
+  </div>
+
+  <div class="relative z-1">
+    
+<header class="py-3">
+  <div class="content-container">
+    <div class="flex justify-between items-center">
+      
+      <div>
+        <a href="https://adonisjs.com/" title="Go to homepage" class="text-sand12 up-can-clean" up-follow="" up-preload="" up-target="[layout-hero], [layout-main]"><svg viewBox="0 0 108 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 95px; top: 2px; position: relative;">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.3331C0 29.506 3.16017 32.6662 16.3331 32.6662C29.506 32.6662 32.6662 29.506 32.6662 16.3331C32.6662 3.16017 29.506 0 16.3331 0C3.16017 0 0 3.16017 0 16.3331ZM6.58646 19.7261L11.7093 8.08338C12.5742 6.12075 14.2374 5.05627 16.3331 5.05627C18.4288 5.05627 20.092 6.12075 20.9569 8.08338L26.0797 19.7261C26.3126 20.2916 26.5122 21.0235 26.5122 21.6555C26.5122 24.5495 24.483 26.5787 21.589 26.5787C20.6032 26.5787 19.8203 26.3271 19.0278 26.0725C18.2158 25.8116 17.3937 25.5475 16.3331 25.5475C15.2847 25.5475 14.4426 25.814 13.6145 26.076C12.8136 26.3294 12.0258 26.5787 11.0772 26.5787C8.18318 26.5787 6.15402 24.5495 6.15402 21.6555C6.15402 21.0235 6.35361 20.2916 6.58646 19.7261ZM16.3331 10.1125L11.2768 21.5557C12.7737 20.8571 14.5035 20.5245 16.3331 20.5245C18.0961 20.5245 19.8924 20.8571 21.3228 21.5557L16.3331 10.1125Z" fill="currentColor"></path>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M94.0883 8.03894C92.9542 8.03894 92.1352 8.84223 92.1352 9.96054C92.1352 11.0788 92.9542 11.8821 94.0883 11.8821C95.2223 11.8821 96.0414 11.0788 96.0414 9.96054C96.0414 8.84223 95.2223 8.03894 94.0883 8.03894ZM58.3654 24.5458C55.3413 24.5458 53.1519 22.3097 53.1519 18.8125C53.1519 15.2523 55.3413 13.0162 58.3654 13.0162C59.7673 13.0162 60.8068 13.4887 61.4211 14.418V8.54297H64.5713V24.2938H61.4211V23.1755C60.8226 24.089 59.783 24.5458 58.3654 24.5458ZM56.3651 18.8125C56.3651 16.8594 57.4204 15.5836 59.027 15.5836C60.6493 15.5836 61.6889 16.8436 61.6889 18.7967C61.6889 20.7183 60.6493 21.9627 59.027 21.9627C57.4204 21.9627 56.3651 20.7183 56.3651 18.8125ZM69.517 18.781C69.517 16.8436 70.5723 15.5993 72.1474 15.5993C73.7382 15.5993 74.7935 16.8436 74.7935 18.781C74.7935 20.7183 73.7382 21.9627 72.1474 21.9627C70.5723 21.9627 69.517 20.7183 69.517 18.781ZM104.232 21.2854C104.232 21.8681 103.791 22.2147 102.672 22.2147C101.412 22.2147 100.625 21.5531 100.625 20.7498H97.4747C97.5535 22.9235 99.6168 24.5458 102.609 24.5458C105.445 24.5458 107.256 23.2857 107.256 21.0491C107.256 19.3795 106.185 18.214 104.059 17.7887L101.775 17.3319C101.082 17.1902 100.672 16.8436 100.672 16.3869C100.672 15.7096 101.365 15.3473 102.247 15.3473C103.507 15.3473 103.996 15.9301 103.996 16.6231H106.988C106.909 14.5755 105.303 13.0162 102.31 13.0162C99.5223 13.0162 97.6322 14.418 97.6322 16.5444C97.6322 18.466 98.8765 19.3323 100.735 19.726L103.003 20.2143C103.744 20.3718 104.232 20.6868 104.232 21.2854ZM95.6791 24.2938H92.5289V13.2682H95.6791V24.2938ZM82.8895 13.2682V14.418C83.6927 13.4887 84.7638 13.0162 86.0869 13.0162C88.5597 13.0162 90.1663 14.6228 90.1663 17.1114V24.2938H87.0162V17.7729C87.0162 16.4341 86.2601 15.6308 84.9528 15.6308C83.6455 15.6308 82.8895 16.4341 82.8895 17.7729V24.2938H79.7393V13.2682H82.8895ZM72.1474 13.0162C68.7925 13.0162 66.3039 15.4418 66.3039 18.781C66.3039 22.1202 68.7925 24.5458 72.1474 24.5458C75.5181 24.5458 78.0067 22.1202 78.0067 18.781C78.0067 15.4418 75.5181 13.0162 72.1474 13.0162ZM45.8751 15.5836C44.2685 15.5836 43.2132 16.8594 43.2132 18.8125C43.2132 20.7183 44.2685 21.9627 45.8751 21.9627C47.4974 21.9627 48.5369 20.7183 48.5369 18.7967C48.5369 16.8436 47.4974 15.5836 45.8751 15.5836ZM40 18.8125C40 22.3097 42.1894 24.5458 45.1978 24.5458C46.6311 24.5458 47.6549 24.089 48.2692 23.1755V24.2938H51.4193V13.2682H48.2692V14.418C47.6391 13.4887 46.5996 13.0162 45.1978 13.0162C42.1894 13.0162 40 15.2523 40 18.8125Z" fill="currentColor"></path>
+</svg>
+
+        </a>
+      </div>
+
+      
+      <div class="xs:block md:hidden">
+        <button class="font-medium flex space-x-2 items-center" @click.prevent="mobileNavExpanded = true"><svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          <span>Menu</span>
+        </button>
+      </div>
+
+      
+      <div class="fixed inset-0 bg-white z-10 hidden md:bg-transparent md:relative md:inset-auto md:z-auto md:flex md:items-center md:justify-center md:space-x-10 md:space-y-0 md:w-auto md:h-auto md:py-0 md:px-0 md:top-auto md:right-auto md:bottom-auto md:left-auto" :class="{ &#39;!block&#39;: mobileNavExpanded }">
+        <div class="flex flex-col justify-center items-center h-full space-y-8 md:flex-row md:space-x-10 md:space-y-0">
+          
+          <button class="absolute right-6 top-6 md:hidden" @click.prevent="mobileNavExpanded = false"><svg width="1em" height="1em" viewBox="0 0 24 24" class="w-6 h-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6L6 18M6 6l12 12"></path></svg>
+          </button>
+
+          
+          <nav>
+            <ul class="flex flex-col items-center space-y-3 md:space-x-4 md:flex-row md:space-y-0">
+                <li>
+                  <a href="https://docs.adonisjs.com/guides/introduction" up-scroll="reset" class="transition-colors ease-in-out duration-200 font-medium text-sanda11 focus:text-sand13 hover:text-sand13 text-xl md:text-sm">
+                    Docs
+                  </a>
+                </li>
+                <li>
+                  <a href="https://adonisjs.com/contact" up-follow="" up-preload="" up-target="[layout-hero], [layout-main]" up-scroll="reset" class="transition-colors ease-in-out duration-200 font-medium text-sanda11 focus:text-sand13 hover:text-sand13 text-xl md:text-sm up-can-clean">
+                    Partnership
+                  </a>
+                </li>
+                <li>
+                  <a href="https://adonisjs.com/blog" up-follow="" up-preload="" up-target="[layout-hero], [layout-main]" up-alias="/blog/*" up-scroll="reset" class="transition-colors ease-in-out duration-200 font-medium text-sanda11 focus:text-sand13 hover:text-sand13 text-xl md:text-sm up-can-clean">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="https://adonisjs.com/about" up-follow="" up-preload="" up-target="[layout-hero], [layout-main]" up-scroll="reset" class="transition-colors ease-in-out duration-200 font-medium text-sanda11 focus:text-sand13 hover:text-sand13 text-xl md:text-sm up-can-clean">
+                    About
+                  </a>
+                </li>
+            </ul>
+          </nav>
+
+          
+          <nav>
+            <ul>
+              <li>
+                <a href="https://github.com/adonisjs/core" target="_blank" class="flex items-center transition-colors ease-in-out duration-200 text-sand13 text-xl md:text-sm">
+                  <svg width="1em" height="1em" viewBox="0 0 20 20" class="w-5 h-5"><path fill="currentColor" d="M20 10.25q0 3.351-1.908 6.027t-4.928 3.703q-.352.068-.514-.093a.54.54 0 0 1-.163-.4V16.67q0-1.295-.677-1.895a9 9 0 0 0 1.335-.24q.591-.16 1.223-.52a3.7 3.7 0 0 0 1.055-.888q.423-.528.69-1.402t.267-2.008q0-1.616-1.028-2.75q.48-1.214-.105-2.723q-.364-.12-1.054.147a7 7 0 0 0-1.198.587l-.495.32a9 9 0 0 0-2.5-.346a9 9 0 0 0-2.5.347a12 12 0 0 0-.553-.36q-.345-.214-1.088-.514q-.741-.3-1.12-.18q-.572 1.507-.09 2.722q-1.03 1.134-1.03 2.75q0 1.134.268 2.002q.267.867.683 1.401a3.5 3.5 0 0 0 1.048.894q.632.36 1.224.52q.593.162 1.335.241q-.52.48-.638 1.375a2.5 2.5 0 0 1-.586.2a3.6 3.6 0 0 1-.742.067q-.43 0-.853-.287q-.423-.288-.723-.834a2.1 2.1 0 0 0-.631-.694q-.384-.267-.645-.32l-.26-.04q-.273 0-.378.06t-.065.153a.7.7 0 0 0 .117.187a1 1 0 0 0 .17.16l.09.066q.287.135.567.508q.28.374.41.68l.13.307q.17.507.574.821q.404.315.872.4q.468.087.905.094q.436.006.723-.047l.299-.053q0 .507.007 1.188l.006.72q0 .24-.17.4q-.168.162-.52.094q-3.021-1.028-4.928-3.703Q0 13.6 0 10.25q0-2.79 1.341-5.145a10.1 10.1 0 0 1 3.64-3.73A9.6 9.6 0 0 1 10 0a9.6 9.6 0 0 1 5.02 1.375a10.1 10.1 0 0 1 3.639 3.73Q20 7.461 20 10.25"></path></svg>
+                  <span class="text-sm ml-2 font-medium"> 17.3k </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div layout-hero=""><section class="pb-16 pt-20 md:pt-28">
+  <div class="content-container">
+<h1 class="max-sm:text-balance text-hero-mobile font-semibold text-sand12 md:max-w-3xl md:text-hero">
+        Create bespoke backend applications in record time
+</h1>
+
+
+    <div class="mt-6 md:max-w-2xl">
+<p class="text-sanda11 text-lg md:text-lede">
+          AdonisJS is a TypeScript-first web framework for building web apps and API servers. It comes with support for testing, modern tooling, an ecosystem of official packages, and more.
+</p>
+
+
+      <div class="mt-10">
+  <a class="text-sand1 bg-sand12 text-base font-semibold inline-flex items-center rounded-md space-x-1 hover:brightness-110 hover:saturate-110 hover:contrast-88 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sand8 px-5 py-2" href="https://docs.adonisjs.com/guides/introduction">
+    <span>Get started</span>
+  </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-6 pb-16 relative md:pt-10">
+  <div class="content-container">
+
+<tab-container x-data="edgeTabs">
+  
+
+
+<div role="tablist" class="flex items-center space-x-3 pb-4 whitespace-nowrap overflow-x-auto">
+  
+
+
+
+<button type="button" role="tab" id="tab_0" x-ref="tab_0" aria-selected="true" class="text-xs font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 md:text-sm md:space-y-4" tabindex="0">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19a2 2 0 1 0 4 0a2 2 0 0 0-4 0M19 7a2 2 0 1 0 0-4a2 2 0 0 0 0 4m-8 12h5.5a3.5 3.5 0 0 0 0-7h-8a3.5 3.5 0 0 1 0-7H13"></path></svg>
+            <span>
+              Register routes
+            </span>
+</button>
+
+
+
+
+<button type="button" role="tab" id="tab_1" x-ref="tab_1" aria-selected="false" tabindex="-1" class="text-xs font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 md:text-sm md:space-y-4">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M14.5 4H17a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3v-5m2-7L4 7l2 2"></path><path d="m10 9l2-2l-2-2"></path></g></svg>
+            <span>
+              Create a controller
+            </span>
+</button>
+
+
+
+
+<button type="button" role="tab" id="tab_2" x-ref="tab_2" aria-selected="false" tabindex="-1" class="text-xs font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 md:text-sm md:space-y-4">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 6c0 1.657 3.582 3 8 3s8-1.343 8-3s-3.582-3-8-3s-8 1.343-8 3"></path><path d="M4 6v6c0 1.657 3.582 3 8 3q.718 0 1.402-.046M20 12V6"></path><path d="M4 12v6c0 1.526 3.04 2.786 6.972 2.975m7.448-5.365a2.1 2.1 0 0 1 2.97 2.97L18 22h-3v-3z"></path></g></svg>
+            <span>
+              Make a model
+            </span>
+</button>
+
+
+
+
+<button type="button" role="tab" id="tab_3" x-ref="tab_3" aria-selected="false" tabindex="-1" class="text-xs font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 md:text-sm md:space-y-4">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a12 12 0 0 0 8.5 3A12 12 0 0 1 12 21A12 12 0 0 1 3.5 6A12 12 0 0 0 12 3"></path></svg>
+            <span>
+              Define a validator
+            </span>
+</button>
+
+
+
+
+<button type="button" role="tab" id="tab_4" x-ref="tab_4" aria-selected="false" tabindex="-1" class="text-xs font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 md:text-sm md:space-y-4">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.615 20H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8m-3 5l2 2l4-4M9 8h4m-4 4h2"></path></svg>
+            <span>
+              Put it all together
+            </span>
+</button>
+
+</div>
+
+
+      <div>
+
+
+
+<div role="tabpanel" aria-labelledby="tab_0" x-ref="selectedPanel" class="dark code-example">
+              <pre class="language-typescript dark" data-lines-count="6" style="background-color: #24292e;"><code><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> router </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@adonisjs/core/services/router'</span>
+</div><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> PostsController </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#controllers/posts_controller'</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">router.</span><span style="color: #B392F0;">get</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'posts'</span><span style="color: #E1E4E8;">, [PostsController, </span><span style="color: #9ECBFF;">'index'</span><span style="color: #E1E4E8;">])</span>
+</div><div class="line"><span style="color: #E1E4E8;">router.</span><span style="color: #B392F0;">post</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'posts'</span><span style="color: #E1E4E8;">, [PostsController, </span><span style="color: #9ECBFF;">'store'</span><span style="color: #E1E4E8;">])</span>
+</div><div class="line"><span style="color: #E1E4E8;">router.</span><span style="color: #B392F0;">get</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'posts/:id'</span><span style="color: #E1E4E8;">, [PostsController, </span><span style="color: #9ECBFF;">'show'</span><span style="color: #E1E4E8;">])</span>
+</div></code></pre>
+</div>
+
+
+
+
+<div role="tabpanel" aria-labelledby="tab_1" hidden="" class="dark code-example">
+              <pre class="language-shellscript dark" data-lines-count="1" style="background-color: #24292e;"><code><div class="line"><span style="color: #B392F0;">node</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">ace</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">make:controller</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">posts</span>
+</div></code></pre>
+<pre class="language-typescript dark" data-lines-count="15" style="background-color: #24292e;"><code><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">type</span><span style="color: #E1E4E8;"> { HttpContext } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@adonisjs/core/http'</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #F97583;">export</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">default</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">class</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">PostsController</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">index</span><span style="color: #E1E4E8;">({}</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">HttpContext</span><span style="color: #E1E4E8;">) {</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #6A737D;">// we want to return a paginated list of posts</span>
+</div><div class="line"><span style="color: #E1E4E8;">  }</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">store</span><span style="color: #E1E4E8;">({}</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">HttpContext</span><span style="color: #E1E4E8;">) {</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #6A737D;">// we want to save a post</span>
+</div><div class="line"><span style="color: #E1E4E8;">  }</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">show</span><span style="color: #E1E4E8;">({}</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">HttpContext</span><span style="color: #E1E4E8;">) {</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #6A737D;">// we want to return a post by its id</span>
+</div><div class="line"><span style="color: #E1E4E8;">  }</span>
+</div><div class="line"><span style="color: #E1E4E8;">}</span>
+</div></code></pre>
+</div>
+
+
+
+
+<div role="tabpanel" aria-labelledby="tab_2" hidden="" class="dark code-example">
+              <pre class="language-shellscript dark" data-lines-count="1" style="background-color: #24292e;"><code><div class="line"><span style="color: #B392F0;">node</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">ace</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">make:model</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">post</span>
+</div></code></pre>
+<pre class="language-typescript dark" data-lines-count="12" style="background-color: #24292e;"><code><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { BaseModel, column } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@adonisjs/lucid/orm'</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #F97583;">export</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">default</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">class</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">Post</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">extends</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">BaseModel</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line"><span style="color: #E1E4E8;">  @</span><span style="color: #B392F0;">column</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">declare</span><span style="color: #E1E4E8;"> </span><span style="color: #FFAB70;">id</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">number</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">  @</span><span style="color: #B392F0;">column</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">declare</span><span style="color: #E1E4E8;"> </span><span style="color: #FFAB70;">title</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">string</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">  @</span><span style="color: #B392F0;">column</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">declare</span><span style="color: #E1E4E8;"> </span><span style="color: #FFAB70;">contents</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">string</span>
+</div><div class="line"><span style="color: #E1E4E8;">}</span>
+</div></code></pre>
+</div>
+
+
+
+
+<div role="tabpanel" aria-labelledby="tab_3" hidden="" class="dark code-example">
+              <pre class="language-shellscript dark" data-lines-count="1" style="background-color: #24292e;"><code><div class="line"><span style="color: #B392F0;">node</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">ace</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">make:validator</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">posts</span>
+</div></code></pre>
+<pre class="language-typescript dark" data-lines-count="8" style="background-color: #24292e;"><code><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> vine </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@vinejs/vine'</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #F97583;">export</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">createPostValidator</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> vine.</span><span style="color: #B392F0;">compile</span><span style="color: #E1E4E8;">(</span>
+</div><div class="line"><span style="color: #E1E4E8;">  vine.</span><span style="color: #B392F0;">object</span><span style="color: #E1E4E8;">({</span>
+</div><div class="line"><span style="color: #E1E4E8;">    title: vine.</span><span style="color: #B392F0;">string</span><span style="color: #E1E4E8;">().</span><span style="color: #B392F0;">trim</span><span style="color: #E1E4E8;">().</span><span style="color: #B392F0;">minLength</span><span style="color: #E1E4E8;">(</span><span style="color: #79B8FF;">4</span><span style="color: #E1E4E8;">).</span><span style="color: #B392F0;">maxLength</span><span style="color: #E1E4E8;">(</span><span style="color: #79B8FF;">256</span><span style="color: #E1E4E8;">),</span>
+</div><div class="line"><span style="color: #E1E4E8;">    contents: vine.</span><span style="color: #B392F0;">string</span><span style="color: #E1E4E8;">().</span><span style="color: #B392F0;">trim</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line"><span style="color: #E1E4E8;">  })</span>
+</div><div class="line"><span style="color: #E1E4E8;">)</span>
+</div></code></pre>
+</div>
+
+
+
+
+<div role="tabpanel" aria-labelledby="tab_4" hidden="" class="dark code-example">
+              <pre class="language-typescript dark" data-lines-count="19" style="background-color: #24292e;"><code><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> Post </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#models/post'</span>
+</div><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { createPostValidator } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#validators/post'</span>
+</div><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">type</span><span style="color: #E1E4E8;"> { HttpContext } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@adonisjs/core/http'</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #F97583;">export</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">default</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">class</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">PostsController</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">index</span><span style="color: #E1E4E8;">({ </span><span style="color: #FFAB70;">request</span><span style="color: #E1E4E8;"> }</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">HttpContext</span><span style="color: #E1E4E8;">) {</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">page</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> request.</span><span style="color: #B392F0;">input</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'page'</span><span style="color: #E1E4E8;">, </span><span style="color: #79B8FF;">1</span><span style="color: #E1E4E8;">)</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">return</span><span style="color: #E1E4E8;"> Post.</span><span style="color: #B392F0;">query</span><span style="color: #E1E4E8;">().</span><span style="color: #B392F0;">paginate</span><span style="color: #E1E4E8;">(page)</span>
+</div><div class="line"><span style="color: #E1E4E8;">  }</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">store</span><span style="color: #E1E4E8;">({ </span><span style="color: #FFAB70;">request</span><span style="color: #E1E4E8;"> }</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">HttpContext</span><span style="color: #E1E4E8;">) {</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">payload</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> request.</span><span style="color: #B392F0;">validateUsing</span><span style="color: #E1E4E8;">(createPostValidator)</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">return</span><span style="color: #E1E4E8;"> Post.</span><span style="color: #B392F0;">create</span><span style="color: #E1E4E8;">(payload)</span>
+</div><div class="line"><span style="color: #E1E4E8;">  }</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">show</span><span style="color: #E1E4E8;">({ </span><span style="color: #FFAB70;">params</span><span style="color: #E1E4E8;"> }</span><span style="color: #F97583;">:</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">HttpContext</span><span style="color: #E1E4E8;">) {</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">return</span><span style="color: #E1E4E8;"> Post.</span><span style="color: #B392F0;">findOrFail</span><span style="color: #E1E4E8;">(params.id)</span>
+</div><div class="line"><span style="color: #E1E4E8;">  }</span>
+</div><div class="line"><span style="color: #E1E4E8;">}</span>
+</div></code></pre>
+</div>
+
+      </div>
+</tab-container>
+
+  </div>
+</section>
+
+    </div>
+  </div>
+</div>
+
+
+  <main layout-main=""><div class="relative bg-white">
+  <div class="absolute inset-0 justify-center pointer-events-none hidden lg:flex" style="--marker-color: var(--sand-4)">
+    <div class="content-container relative h-full w-full guides_markers"></div>
+  </div>
+
+  <div class="relative z-1">
+    <section class="py-20">
+  <div class="content-container">
+    <div>
+      <div class="grid gap-y-8 md:grid-cols-3 md:gap-x-12 md:gap-y-0"><div>
+  <div class="flex space-x-1 items-center mb-2"><svg viewBox="0 0 24 24" class="w-6 h-6 icon-tabler text-sand12"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 17.5c.32.32.754.5 1.207.5h.543c.69 0 1.25-.56 1.25-1.25v-.25a1.5 1.5 0 0 0-1.5-1.5a1.5 1.5 0 0 1-1.5-1.5v-.25c0-.69.56-1.25 1.25-1.25h.543c.453 0 .887.18 1.207.5M9 12h4m-2 0v6"></path><path d="M21 19V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2"></path></g></svg>
+    <h3 class="font-semibold text-lg text-sand12">
+      Type-safe
+    </h3>
+  </div>
+
+  <div class="text-sm">
+              <p>
+            We pay a closer look at type-safety, seamless intellisense, and support for auto imports when designing framework APIs.
+          </p>
+  </div>
+</div>
+
+<div>
+  <div class="flex space-x-1 items-center mb-2"><svg viewBox="0 0 24 24" class="w-6 h-6 icon-tabler text-sand12"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m9 12l2 2l4-4"></path><path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9-9 9s-9-1.8-9-9s1.8-9 9-9"></path></g></svg>
+    <h3 class="font-semibold text-lg text-sand12">
+      ESM ready
+    </h3>
+  </div>
+
+  <div class="text-sm">
+              <p>
+            AdonisJS leverages modern JavaScript primitives, including ES modules, Node.js sub-path imports, and much more.
+          </p>
+  </div>
+</div>
+
+<div>
+  <div class="flex space-x-1 items-center mb-2"><svg viewBox="0 0 24 24" class="w-6 h-6 icon-tabler text-sand12"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.636 19.364a9 9 0 1 1 12.728 0M16 9l-4 4"></path></svg>
+    <h3 class="font-semibold text-lg text-sand12">
+      Fast - Wherever it matters
+    </h3>
+  </div>
+
+  <div class="text-sm">
+              <p>
+            We ship with one of the fastest validation libraries, and our HTTP server has performance on par with Fastify.
+          </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="max-w-content mx-auto">
+    <div class="relative guides_markers_horizontal h-[1px]"></div>
+  </div>
+</section>
+
+
+<section class="relative overflow-hidden my-20 md:my-24">
+  <div class="content-container">
+    <div class="flex">
+      <div><h2 class="text-section-title text-sand12 font-semibold md:max-w-2xl">
+            Feature rich framework core
+</h2>
+
+
+        <div class="mt-6"><p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+              The core of the framework is <span class="text-highlight">a single npm package</span> that provides all the base-level features you need to create a web application from scratch.
+</p>
+
+<p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+              No need to spend hours finding and assembling dozens of packages together before you can write the first line of code.
+</p>
+
+<p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+              Use AdonisJS and be productive from day one.
+</p>
+
+        </div>
+
+        <ul class="mt-10">
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/config">
+                Config management
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/environment-variables">
+                Type-safe environment variables
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/folder-structure">
+                Thoughtful folder structure
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/routing">
+                Routing and controllers
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/middleware">
+                Middleware
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/bodyparser-middleware">
+                BodyParser
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/file-uploads">
+                File uploads
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/emitter">
+                Type-safe event emitter
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/encryption">
+                Encryption
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://docs.adonisjs.com/guides/security/hashing">
+                Password hashing
+              </a>
+            </li>
+            <li class="text-sand12 underline checkbox bg-[length:20px] pl-7 my-3 font-medium hover:text-sand13">
+              <a href="https://adonisjs.com/#official-packages">
+                And much, much more.
+              </a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="absolute -right-[10px] top-[160px] flex-1 hidden md:block dark">
+        <div class="rotate-1 bg-sand13 rounded-lg">
+          <div class="flex items-center h-8 space-x-1.5 px-6 border-b border-[var(--sand-a6)]">
+            <div class="w-2.5 h-2.5 border-2 border-[#FA615B] rounded-full"></div>
+            <div class="w-2.5 h-2.5 border-2 border-[#FCBB40] rounded-full"></div>
+            <div class="w-2.5 h-2.5 border-2 border-[#41C84A] rounded-full"></div>
+          </div>
+          <div class="opacity-[0.7] hover:opacity-[1] transition-opacity ease-in-out duration-150">
+            <pre class="language-typescript dark" data-lines-count="19" style="background-color: #24292e;"><code><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> router </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@adonisjs/core/services/router'</span>
+</div><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> User </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#models/user'</span>
+</div><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { middleware } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#start/kernel'</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">router.</span><span style="color: #B392F0;">put</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'me/avatar'</span><span style="color: #E1E4E8;">, </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> ({ </span><span style="color: #FFAB70;">request</span><span style="color: #E1E4E8;"> }) </span><span style="color: #F97583;">=&gt;</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">avatar</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> request.</span><span style="color: #B392F0;">file</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'avatar'</span><span style="color: #E1E4E8;">, {</span>
+</div><div class="line"><span style="color: #E1E4E8;">    extnames: [</span><span style="color: #9ECBFF;">'jpg'</span><span style="color: #E1E4E8;">, </span><span style="color: #9ECBFF;">'png'</span><span style="color: #E1E4E8;">],</span>
+</div><div class="line"><span style="color: #E1E4E8;">    size: </span><span style="color: #9ECBFF;">'2mb'</span>
+</div><div class="line"><span style="color: #E1E4E8;">  })</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> avatar.</span><span style="color: #B392F0;">move</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'uploads'</span><span style="color: #E1E4E8;">)</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">return</span><span style="color: #E1E4E8;"> avatar</span>
+</div><div class="line"><span style="color: #E1E4E8;">})</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">router</span>
+</div><div class="line"><span style="color: #E1E4E8;">  .</span><span style="color: #B392F0;">get</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'/users/:id'</span><span style="color: #E1E4E8;">, </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> ({ </span><span style="color: #FFAB70;">params</span><span style="color: #E1E4E8;"> }) </span><span style="color: #F97583;">=&gt;</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line"><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">return</span><span style="color: #E1E4E8;"> User.</span><span style="color: #B392F0;">findByOrFail</span><span style="color: #E1E4E8;">(params.id)</span>
+</div><div class="line"><span style="color: #E1E4E8;">  })</span>
+</div><div class="line"><span style="color: #E1E4E8;">  .</span><span style="color: #B392F0;">use</span><span style="color: #E1E4E8;">(middleware.</span><span style="color: #B392F0;">auth</span><span style="color: #E1E4E8;">())</span>
+</div></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-12 mt-20 md:mt-28">
+  <div class="content-container">
+    <div><h2 class="text-section-title text-sand12 font-semibold md:max-w-2xl">
+          World-class testing experience
+</h2>
+
+
+      <div class="mt-6"><p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+            Testing is not an afterthought for us. We ship with primitives to manage test databases, swap dependencies, generate fake data, interact with cookies and sessions, and much more.
+</p>
+<p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+            <span class="text-highlight">With AdonisJS, you will love writing tests.</span>
+</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-6 pb-16 relative">
+  <div class="relative z-1">
+    <div class="content-container">
+
+<tab-container x-data="edgeTabs">
+  
+
+
+<div role="tablist" class="flex items-center space-x-3 pb-4 whitespace-nowrap overflow-x-auto">
+  
+
+
+
+<button type="button" role="tab" id="tab_0" x-ref="tab_0" aria-selected="true" class="font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 text-xs md:text-sm md:space-y-4" tabindex="0">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm4-2v4"></path></svg>
+              <span>
+                Browser testing
+              </span>
+</button>
+
+
+
+
+<button type="button" role="tab" id="tab_1" x-ref="tab_1" aria-selected="false" tabindex="-1" class="font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 text-xs md:text-sm md:space-y-4">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 19a2 2 0 0 1-2-2v-4l-1-1l1-1V7a2 2 0 0 1 2-2m6 6.875l3-1.687m-3 1.687v3.375m0-3.375l-3-1.687m3 1.687l3 1.688M12 8.5v3.375m0 0l-3 1.688M18 19a2 2 0 0 0 2-2v-4l1-1l-1-1V7a2 2 0 0 0-2-2"></path></svg>
+              <span>
+                Open API tests
+              </span>
+</button>
+
+
+
+
+<button type="button" role="tab" id="tab_2" x-ref="tab_2" aria-selected="false" tabindex="-1" class="font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 text-xs md:text-sm md:space-y-4">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 3l8 4.5v9L12 21l-8-4.5v-9zm0 9l8-4.5M12 12v9m0-9L4 7.5"></path></svg>
+              <span>
+                Trap outgoing mails
+              </span>
+</button>
+
+
+
+
+<button type="button" role="tab" id="tab_3" x-ref="tab_3" aria-selected="false" tabindex="-1" class="font-semibold px-3 flex flex-col items-center space-y-2 text-sand9 hover:text-sand11 text-xs md:text-sm md:space-y-4">
+  <svg viewBox="0 0 24 24" class="icon-tabler w-8 h-8 md:w-10 md:h-10"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m8 9l3 3l-3 3m5 0h3"></path><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></g></svg>
+              <span>
+                Command-line tests
+              </span>
+</button>
+
+</div>
+
+
+        <div>
+
+
+
+<div role="tabpanel" aria-labelledby="tab_0" x-ref="selectedPanel" class="dark code-example">
+                <pre class="language-typescript dark" data-lines-count="26" style="background-color: #24292e;"><code><div class="line dim"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { test } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@japa/runner'</span>
+</div><div class="line dim"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { UserFactory } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#factories/user_factory'</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #B392F0;">test</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'render polls created by the logged-in user'</span><span style="color: #E1E4E8;">, </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> ({ </span><span style="color: #FFAB70;">visit</span><span style="color: #E1E4E8;">, </span><span style="color: #FFAB70;">browserContext</span><span style="color: #E1E4E8;"> }) </span><span style="color: #F97583;">=&gt;</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * Create a user with 5 polls using Model factories</span>
+</div><div class="line dim"><span style="color: #6A737D;">   */</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">user</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> UserFactory.</span><span style="color: #B392F0;">with</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'polls'</span><span style="color: #E1E4E8;">, </span><span style="color: #79B8FF;">5</span><span style="color: #E1E4E8;">).</span><span style="color: #B392F0;">create</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * Mark the user as logged in</span>
+</div><div class="line dim"><span style="color: #6A737D;">   */</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> browserContext.</span><span style="color: #B392F0;">loginAs</span><span style="color: #E1E4E8;">(user)</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * Visit the endpoint that renders the list of</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * polls for the logged-in user</span>
+</div><div class="line dim"><span style="color: #6A737D;">   */</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">page</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> </span><span style="color: #B392F0;">visit</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'/me/polls'</span><span style="color: #E1E4E8;">)</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">for</span><span style="color: #E1E4E8;"> (</span><span style="color: #F97583;">let</span><span style="color: #E1E4E8;"> poll </span><span style="color: #F97583;">in</span><span style="color: #E1E4E8;"> user.polls) {</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> page.</span><span style="color: #B392F0;">assertExists</span><span style="color: #E1E4E8;">(</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">      page.</span><span style="color: #B392F0;">locator</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'h2'</span><span style="color: #E1E4E8;">, { hasText: poll.title })</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">    )</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  }</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">})</span>
+</div></code></pre>
+</div>
+
+
+
+
+<div role="tabpanel" aria-labelledby="tab_1" hidden="" class="dark code-example">
+                <pre class="language-typescript dark" data-lines-count="24" style="background-color: #24292e;"><code><div class="line dim"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { test } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@japa/runner'</span>
+</div><div class="line dim"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { UserFactory } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#factories/user_factory'</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #B392F0;">test</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'get list of expenses for the logged-in user'</span><span style="color: #E1E4E8;">, </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> ({ </span><span style="color: #FFAB70;">client</span><span style="color: #E1E4E8;"> }) </span><span style="color: #F97583;">=&gt;</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * Create a user with 10 expenses using Model factories</span>
+</div><div class="line dim"><span style="color: #6A737D;">   */</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">user</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> UserFactory.</span><span style="color: #B392F0;">with</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'expenses'</span><span style="color: #E1E4E8;">, </span><span style="color: #79B8FF;">10</span><span style="color: #E1E4E8;">).</span><span style="color: #B392F0;">create</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * Login user and visit the API endpoint to</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * get the list of expenses</span>
+</div><div class="line dim"><span style="color: #6A737D;">   */</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">response</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> client</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">    .</span><span style="color: #B392F0;">get</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'/me/expenses'</span><span style="color: #E1E4E8;">)</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">    .</span><span style="color: #B392F0;">loginAs</span><span style="color: #E1E4E8;">(user)</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * Assert response matches the schema defined</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * in an OpenAPI schema file</span>
+</div><div class="line dim"><span style="color: #6A737D;">   */</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">  response.</span><span style="color: #B392F0;">assertAgainstApiSpec</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  response.</span><span style="color: #B392F0;">assertBodyContains</span><span style="color: #E1E4E8;">(user.expenses.</span><span style="color: #B392F0;">toJSON</span><span style="color: #E1E4E8;">())</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">})</span>
+</div></code></pre>
+</div>
+
+
+
+
+<div role="tabpanel" aria-labelledby="tab_2" hidden="" class="dark code-example">
+                <pre class="language-typescript dark" data-lines-count="28" style="background-color: #24292e;"><code><div class="line dim"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { test } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@japa/runner'</span>
+</div><div class="line dim"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> mail </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@adonisjs/mail/services/main'</span>
+</div><div class="line dim"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> VerifyEmailNotification </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#mails/verify_email'</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #B392F0;">test</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'create user account'</span><span style="color: #E1E4E8;">, </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> ({ </span><span style="color: #FFAB70;">client</span><span style="color: #E1E4E8;"> }) </span><span style="color: #F97583;">=&gt;</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * Fake emails before executing the code that</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * triggers emails</span>
+</div><div class="line dim"><span style="color: #6A737D;">   */</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> { </span><span style="color: #79B8FF;">mails</span><span style="color: #E1E4E8;"> } </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> mail.</span><span style="color: #B392F0;">fake</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">response</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> client.</span><span style="color: #B392F0;">post</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'users'</span><span style="color: #E1E4E8;">).</span><span style="color: #B392F0;">json</span><span style="color: #E1E4E8;">({</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">    email: </span><span style="color: #9ECBFF;">'virk@adonisjs.com'</span><span style="color: #E1E4E8;">,</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">    password: </span><span style="color: #9ECBFF;">'secret'</span><span style="color: #E1E4E8;">,</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">  })</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #E1E4E8;">  response.</span><span style="color: #B392F0;">assertStatus</span><span style="color: #E1E4E8;">(</span><span style="color: #79B8FF;">201</span><span style="color: #E1E4E8;">)</span>
+</div><div class="line dim">
+</div><div class="line dim"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * Assert an email was sent after making the request</span>
+</div><div class="line dim"><span style="color: #6A737D;">   * to the "/users" endpoint</span>
+</div><div class="line dim"><span style="color: #6A737D;">   */</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">  mails.</span><span style="color: #B392F0;">assertSent</span><span style="color: #E1E4E8;">(VerifyEmailNotification, ({ </span><span style="color: #FFAB70;">message</span><span style="color: #E1E4E8;"> }) </span><span style="color: #F97583;">=&gt;</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">    </span><span style="color: #F97583;">return</span><span style="color: #E1E4E8;"> message</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">      .</span><span style="color: #B392F0;">hasTo</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'virk@adonisjs.com'</span><span style="color: #E1E4E8;">)</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">      .</span><span style="color: #B392F0;">hasSubject</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'Verify email address'</span><span style="color: #E1E4E8;">)</span>
+</div><div class="line highlight"><span style="color: #E1E4E8;">  })</span>
+</div><div class="line dim"><span style="color: #E1E4E8;">})</span>
+</div></code></pre>
+</div>
+
+
+
+
+<div role="tabpanel" aria-labelledby="tab_3" hidden="" class="dark code-example">
+                <pre class="language-typescript dark" data-lines-count="19" style="background-color: #24292e;"><code><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> { test } </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@japa/runner'</span>
+</div><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> ace </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'@adonisjs/core/services/ace'</span>
+</div><div class="line"><span style="color: #F97583;">import</span><span style="color: #E1E4E8;"> Greet </span><span style="color: #F97583;">from</span><span style="color: #E1E4E8;"> </span><span style="color: #9ECBFF;">'#commands/greet'</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #B392F0;">test</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'greet the user and exit successfully'</span><span style="color: #E1E4E8;">, </span><span style="color: #F97583;">async</span><span style="color: #E1E4E8;"> () </span><span style="color: #F97583;">=&gt;</span><span style="color: #E1E4E8;"> {</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line"><span style="color: #6A737D;">   * Create an instance of the CLI command</span>
+</div><div class="line"><span style="color: #6A737D;">   * and execute it</span>
+</div><div class="line"><span style="color: #6A737D;">   */</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">const</span><span style="color: #E1E4E8;"> </span><span style="color: #79B8FF;">command</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">=</span><span style="color: #E1E4E8;"> </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> ace.</span><span style="color: #B392F0;">create</span><span style="color: #E1E4E8;">(Greet, [</span><span style="color: #9ECBFF;">'virk'</span><span style="color: #E1E4E8;">])</span>
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #F97583;">await</span><span style="color: #E1E4E8;"> command.</span><span style="color: #B392F0;">exec</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line">
+</div><div class="line"><span style="color: #E1E4E8;">  </span><span style="color: #6A737D;">/**</span>
+</div><div class="line"><span style="color: #6A737D;">   * Write assertions for the command status and</span>
+</div><div class="line"><span style="color: #6A737D;">   * logs</span>
+</div><div class="line"><span style="color: #6A737D;">   */</span><span style="color: #E1E4E8;"> </span>
+</div><div class="line"><span style="color: #E1E4E8;">  command.</span><span style="color: #B392F0;">assertSucceeded</span><span style="color: #E1E4E8;">()</span>
+</div><div class="line"><span style="color: #E1E4E8;">  command.</span><span style="color: #B392F0;">assertLog</span><span style="color: #E1E4E8;">(</span><span style="color: #9ECBFF;">'[ blue(info) ] Hello world from "Greet"'</span><span style="color: #E1E4E8;">)</span>
+</div><div class="line"><span style="color: #E1E4E8;">})</span>
+</div></code></pre>
+</div>
+
+        </div>
+</tab-container>
+
+    </div>
+  </div>
+</section>
+
+  </div>
+</div>
+
+<div class="relative bg-gradient-to-b from-sand1 to-sand2">
+  <div class="absolute inset-0 justify-center pointer-events-none hidden lg:flex" style="--marker-color: var(--sand-5)">
+    <div class="content-container relative h-full w-full guides_markers"></div>
+  </div>
+
+  <div class="relative z-1">
+    <section class="py-20 md:py-24">
+  <div class="content-container">
+    
+    <div id="official-packages"><h2 class="text-section-title text-sand12 font-semibold md:max-w-2xl">
+          A huge collection of officially maintained packages
+</h2>
+
+
+      <div class="mt-6"><p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+            Always find yourself switching between the latest ORMs or migrating away from those two unmaintained libraries<span class="font-mono">?</span>
+</p>
+<p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+            We have been there too<span class="font-mono">!</span> That is why AdonisJS ships with a collection of officially maintained and well-documented packages.
+</p>
+<p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+            <span class="text-highlight">Pick and use the ones you need.</span>
+</p>
+
+      </div>
+    </div>
+
+    
+    <div class="mt-12">
+      <div class="grid gap-4 md:grid-cols-3">
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-teal-700 bg-teal-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 6a8 3 0 1 0 16 0A8 3 0 1 0 4 6"></path><path d="M4 6v6a8 3 0 0 0 16 0V6"></path><path d="M4 12v6a8 3 0 0 0 16 0v-6"></path></g></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Lucid
+            </h4>
+
+            
+            <div class="text-sm">
+              SQL ORM with a database query builder, Active record based models, support for migrations, and model factories for testing.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-pink-700 bg-pink-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 13a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"></path><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0-2 0m-3-5V7a4 4 0 1 1 8 0v4"></path></g></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Auth
+            </h4>
+
+            
+            <div class="text-sm">
+              Driver-based authentication layer with support for sessions, API tokens, basic auth, and much more.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-cyan-700 bg-cyan-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0m6-3l6 6"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Bouncer
+            </h4>
+
+            
+            <div class="text-sm">
+              Bouncer provides low-level APIs to build custom authorization workflows like RBAC or ACL.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-indigo-700 bg-indigo-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 18a4.6 4.4 0 0 1 0-9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"></path><path d="m9 15l3-3l3 3m-3-3v9"></path></g></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              FlyDrive
+            </h4>
+
+            
+            <div class="text-sm">
+              FlyDrive provides a unified API to manage user-uploaded files on S3, GCS, and the local filesystem.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-cyan-700 bg-cyan-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"></path><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0m2.41-1.41L16 8m-9 4a5 5 0 0 1 5-5"></path></g></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Limiter
+            </h4>
+
+            
+            <div class="text-sm">
+              Protect your API endpoints by implementing fine-grained rate limiting. Supports multiple backend stores.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-teal-700 bg-teal-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4a2 2 0 0 0-2 2v3a2 3 0 0 1-2 3a2 3 0 0 1 2 3v3a2 2 0 0 0 2 2M17 4a2 2 0 0 1 2 2v3a2 3 0 0 0 2 3a2 3 0 0 0-2 3v3a2 2 0 0 1-2 2"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Edge
+            </h4>
+
+            
+            <div class="text-sm">
+              A modern and batteries-included template engine for the ones who keep things simple.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-cyan-700 bg-cyan-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v2a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3zm12 13H6a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3h12M7 8v.01M7 16v.01M20 15l-2 3h3l-2 3"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Bentocache
+            </h4>
+
+            
+            <div class="text-sm">
+              Speed up your applications by storing slowly changing data in a multi-tier cache store.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-teal-700 bg-teal-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3a12 12 0 0 0 8.5 3A12 12 0 0 1 12 21A12 12 0 0 1 3.5 6A12 12 0 0 0 12 3"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              VineJS
+            </h4>
+
+            
+            <div class="text-sm">
+              A superfast and type-safe validation library for Node.js. VineJS comes with 50+ validation rules and 12+ schema types.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-pink-700 bg-pink-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5a2 2 0 1 0 4 0a2 2 0 1 0-4 0M3 19a2 2 0 1 0 4 0a2 2 0 1 0-4 0m14 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0m-8-5a3 3 0 1 0 6 0a3 3 0 1 0-6 0m3-7v4m-5.3 6.8l2.8-2m7.8 2l-2.8-2"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Ally
+            </h4>
+
+            
+            <div class="text-sm">
+              Add support for Social login to your apps. Ally ships Twitter, GitHub, Google, LinkedIn, and many more drivers.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-teal-700 bg-teal-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 9a4 4 0 1 0 8 0a4 4 0 0 0-8 0"></path><path d="M5.75 15A8.015 8.015 0 1 0 15 2m-4 15v4m-4 0h8"></path></g></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              I18n
+            </h4>
+
+            
+            <div class="text-sm">
+              Create multi-lingual web apps. We provide APIs for localization, formatting values, and managing translations.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-indigo-700 bg-indigo-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12h4l3 8l4-16l3 8h4"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Health checks
+            </h4>
+
+            
+            <div class="text-sm">
+              Monitor database connectivity, redis memory size, and your application health using a single package.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-cyan-700 bg-cyan-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><path d="m3 7l9 6l9-6"></path></g></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Mailer
+            </h4>
+
+            
+            <div class="text-sm">
+              Send emails from your application using a multi-driver mailer. Supports SMTP, SES, Mailgun, Resend and much more.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-teal-700 bg-teal-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 10H4l5.5-6M4 14h16l-5.5 6"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Transmit
+            </h4>
+
+            
+            <div class="text-sm">
+              Send real-time updates by leveraging the power of Server Sent Events (SSE).
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-pink-700 bg-pink-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M5 13a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"></path><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0-2 0m-3-5V7a4 4 0 1 1 8 0v4"></path></g></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Lock
+            </h4>
+
+            
+            <div class="text-sm">
+              Synchronize the access to a shared resource to prevents several processes, or concurrent code, from executing a section of code at the same time.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-indigo-700 bg-indigo-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M10 4.5L16 3l-2 6.5l2-.5l-4 7v-5l-3 1z"></path><path d="M15 6.5L22 5L12 22L2 5l7.741 1.5"></path></g></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Vite
+            </h4>
+
+            
+            <div class="text-sm">
+              Bundle the frontend assets of your applications using Vite.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-cyan-700 bg-cyan-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12.5 8l4 4l-4 4H17l4-4l-4-4zm-9 0l4 4l-4 4H8l4-4l-4-4z"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Inertia
+            </h4>
+
+            
+            <div class="text-sm">
+              Make your frontend and backend work together in perfect harmony.
+            </div>
+          </div>
+          <div class="bg-white px-6 py-6 shadow-card rounded-md">
+            
+            <div class="mb-4">
+              <div class="text-teal-700 bg-teal-600/20 flex h-9 w-9 items-center justify-center rounded-lg"><svg width="24" height="24" viewBox="0 0 24 24" class="h-6 w-6"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 8.04L7.878 20.164a2.857 2.857 0 1 1-4.041-4.04L15.959 4M7 13h8m4 2l1.5 1.6a2 2 0 1 1-3 0zM15 3l6 6"></path></svg>
+              </div>
+            </div>
+
+            
+            <h4 class="font-semibold text-lg text-sand12 mb-1">
+              Tuyau
+            </h4>
+
+            
+            <div class="text-sm">
+              An end-to-end type-safe client for interacting with your AdonisJS APIs.
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</div>
+
+<div class="relative bg-white">
+  <div class="absolute inset-0 justify-center pointer-events-none hidden lg:flex" style="--marker-color: var(--sand-4)">
+    <div class="content-container relative h-full w-full guides_markers"></div>
+  </div>
+
+  <div class="relative z-1">
+    <section class="py-20">
+  <div class="content-container">
+    <div>
+      <div class="grid gap-y-8 md:grid-cols-3 md:gap-x-12 md:gap-y-0"><div>
+  <div class="flex space-x-1 items-center mb-2"><svg viewBox="0 0 24 24" class="w-6 h-6 icon-tabler text-sand12"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 3l8 4.5v9L12 21l-8-4.5v-9zm0 9l8-4.5M12 12v9m0-9L4 7.5"></path></svg>
+    <h3 class="font-semibold text-lg text-sand12">
+      IoC container
+    </h3>
+  </div>
+
+  <div class="text-sm">
+              <p>
+            AdonisJS ships with a zero-config IoC container that uses reflection to resolve and inject class dependencies.
+          </p>
+  </div>
+</div>
+
+<div>
+  <div class="flex space-x-1 items-center mb-2"><svg viewBox="0 0 24 24" class="w-6 h-6 icon-tabler text-sand12"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m8 9l3 3l-3 3m5 0h3"></path><path d="M3 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></g></svg>
+    <h3 class="font-semibold text-lg text-sand12">
+      Supercharged CLI
+    </h3>
+  </div>
+
+  <div class="text-sm">
+              <p>
+            Scaffold resources, run database migrations, use application-aware REPL, or create custom commands. All using a unified CLI framework.
+          </p>
+  </div>
+</div>
+
+<div>
+  <div class="flex space-x-1 items-center mb-2"><svg viewBox="0 0 24 24" class="w-6 h-6 icon-tabler text-sand12"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.342 20.566q-.654.255-1.342.434A12 12 0 0 1 3.5 6A12 12 0 0 0 12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 .117 6.34M19 16l-2 3h4l-2 3"></path></svg>
+    <h3 class="font-semibold text-lg text-sand12">
+      Security primitives
+    </h3>
+  </div>
+
+  <div class="text-sm">
+              <p>
+            Implement CORS policies to protect your APIs, or use AdonisJS shield to protect against CSRF, XSS, and man-in-the-middle attacks.
+          </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="max-w-content mx-auto">
+    <div class="relative guides_markers_horizontal h-[1px]"></div>
+  </div>
+</section>
+
+<section class="py-20 md:py-24">
+  <div class="content-container">
+    <div><h2 class="text-section-title text-sand12 font-semibold md:max-w-2xl">
+          A wall full of love and support from developers across the world
+</h2>
+
+    </div>
+
+    <div class="mt-12">
+      <div class="gap-3 space-y-4 md:columns-3">
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/MahmMousa/status/1691694561981321277" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/mahmmousa-BX8G_fOj.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Mahmoud Mousa</p>
+                    <p class="text-sand9 text-xs">@MahmMousa</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                <span class="text-highlight"> Adonis in MVC is a blessing tbh! </span> I use it with HTMX or Turbo and it's just perfect!
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/pvukovic/status/1691701408104394922" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/pvukovic-DzZXAagc.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Peter Vukovic</p>
+                    <p class="text-sand9 text-xs">@pvukovic</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                Adonis is wonderful - just a perfect level of cognitive load a framework can have both in documentation and implementation. <br> Not too much, not too little, but exactly what you need as a developer.
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/techreagan/status/1209464504003768320" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/techreagan-1I93rzjn.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Reagan Ekhameye</p>
+                    <p class="text-sand9 text-xs">@techreagan</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                @adonisframework is the first ever framework I learnt from the docs, I'm in love with this framework, <span class="text-highlight"> it's just like @Laravel but for the @nodejs world </span>. I will be like I'm stuck how can i solve this, the docs got you covered. It's gonna be my long term buddy.
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/mucotreso/status/1504606612656381957" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/mucotreso-CJNAj2S1.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Trésor Muco</p>
+                    <p class="text-sand9 text-xs">@mucotreso</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                The more I work with @adonisframework the more I'm convinced that it is the best framework in the Nodejs Ecosystem. <br> The docs are well written, well designed, you just want to stay there and learn more. <br>Thanks to all the people who are working on this project.
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://x.com/Drag0sNedelcu/status/1751173678295928837" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/drag0snedelcu-DP_-6zDm.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Dragos Nedelcu</p>
+                    <p class="text-sand9 text-xs">@Drag0sNedelcu</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                Tried recently @adonisframework v6 and I am blown away. I love how the modules are separated, like orm, validation etc. Wish there were more discussions on this. Feels highly underrated...
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/carlmathisen/status/1695704205674119664" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/carlmathisen-CW089wJt.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Carl Mathisen</p>
+                    <p class="text-sand9 text-xs">@carlmathisen</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                We’ve used it at work for a couple of years, just replacing these express cocktails. They were fine, but I was tired of maintaining and upgrading a unique set of libraries that were our company unique combination of regular features.
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/jooop4y/status/1686883864533499907" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/jooop4y-DswbrXaC.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Jofie Bernas</p>
+                    <p class="text-sand9 text-xs">@jooop4y</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                Having a solid experience in Laravel and wanting to explore NodeJs, I found @adonisframework a good choice for me to go through. It is been easy for me to jump in since it feels like <span class="text-highlight"> I am just writing Laravel but in typescript and NodeJS </span>, Awesome developer experience!.
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/britzdm/status/1533547008950165507" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/britzdm-BNkZrhEw.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Dylan Britz</p>
+                    <p class="text-sand9 text-xs">@britzdm</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                I've been using @adonisframework for the last two days an I've already got more done then I did in the last 3 weeks with just using expressjs.
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/SamNewby_/status/1396120662289309708" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/samnewby-CvBfPvn0.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Sam Newby</p>
+                    <p class="text-sand9 text-xs">@SamNewby_</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                If you’re a PHP dev who loves Laravel and want to give another language a go and use a similar style framework then make sure to check out @adonisframework. It has its own ORM, Auth support, and even a CLI tool called Ace which is very similar to Artisan.#Laravel #NodeJS
+              </div>
+            </a>
+          </blockquote>
+          <blockquote class="break-inside-avoid-column">
+            <a href="https://twitter.com/andruu/status/1708376936710291599" target="_blank" class="border border-sand7 py-4 px-5 block rounded-lg group transition-colors duration-100 ease-in-out hover:border-sand8">
+              
+              <div class="flex justify-between">
+                <div class="flex space-x-3 items-center">
+                  <div>
+                    <img src="./AdonisJS - A fully featured web framework for Node.js_files/andruu-D0uIF9d8.jpeg" class="w-12 h-12 rounded-full" alt="" loading="lazy">
+                  </div>
+                  <div>
+                    <p class="font-semibold text-sand12">Andrew Weir</p>
+                    <p class="text-sand9 text-xs">@andruu</p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <div class="absolute top-0 right-0 hidden group-hover:block"><svg width="1em" height="1em" viewBox="0 0 24 24" class="icon-tabler text-sand9 w-4 h-4"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6m-7 1l9-9m-5 0h5v5"></path></svg>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="text-sm mt-4">
+                So funny seeing everyone looking/begging for the node/ts equivalent of rails/Laravel when it’s existed for years. I started using @adonisframework in 2016 in production for one of the biggest startups in Asia. If you <span class="text-highlight">want full stack with everything built in</span> take a look.
+              </div>
+            </a>
+          </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</div>
+
+<div class="relative bg-gradient-to-b from-sand1 to-sand2">
+  <div class="absolute inset-0 justify-center pointer-events-none hidden lg:flex" style="--marker-color: var(--sand-5)">
+    <div class="content-container relative h-full w-full guides_markers"></div>
+  </div>
+
+  <div class="relative z-1">
+    <section class="py-24">
+  <div class="content-container">
+    <div><h2 class="text-section-title text-sand12 font-semibold md:max-w-2xl">
+          Sponsored by fantastic companies and individuals
+</h2>
+
+      <div class="mt-6"><p class="text-section-text mb-4 pr-6 md:max-w-2xl md:pr-12 last:mb-0">
+            AdonisJS is an independent open-source project released under the MIT license. We rely on our <a href="https://github.com/sponsors/thetutlage" class="text-sand12 underline transition-colors ease-in-out duration-200 hover:text-sand11" target="_blank">
+            GitHub sponsors to keep the lights on.
+          </a>
+</p>
+
+      </div>
+    </div>
+
+    <div class="mt-12 relative">
+      <div class="flex flex-col-reverse relative z-1 md:flex-row md:space-x-12">
+        <div class="md:w-9/12 mt-8 md:mt-0">
+          <div class="flex flex-wrap">
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/7936820" alt="Route4Me Route Planner" title="Route4Me Route Planner" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/26408759" alt="Sadek Hossain" title="Sadek Hossain" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/131293652" alt="Leonardo Marciano" title="Leonardo Marciano" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/24538973" alt="Zakodium" title="Zakodium" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/2725836" alt="Jalil Wahdatehagh" title="Jalil Wahdatehagh" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/130863254" alt="Intraweb" title="Intraweb" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/380661" alt="Carl Mathisen" title="Carl Mathisen" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/832364" alt="mathieuh" title="mathieuh" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/5564278" alt="Connor Ford" title="Connor Ford" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/13512173" alt="Ndianabasi Udonkang" title="Ndianabasi Udonkang" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/19398726" alt="Tom Gobich" title="Tom Gobich" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/49456694" alt="MyCompany" title="MyCompany" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/80029227" alt="Outloud" title="Outloud" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/139067613" alt="Leaf AI" title="Leaf AI" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/119320" alt="Marco Leong" title="Marco Leong" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/1385093" alt="Jeremy Chaufourier" title="Jeremy Chaufourier" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/2133333" alt="Amine Ben hammou" title="Amine Ben hammou" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/2746730" alt="Filipe Braida" title="Filipe Braida" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/5922571" alt="Jarle Mathiesen" title="Jarle Mathiesen" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/6796697" alt="McSneaky" title="McSneaky" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/8943827" alt="andrew-connell" title="andrew-connell" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/11617741" alt="Maciej Ładoś" title="Maciej Ładoś" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/16577321" alt="Neighbourhoodie Software" title="Neighbourhoodie Software" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/17550955" alt="kubilay" title="kubilay" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/21154061" alt="Philippe DESPLATS" title="Philippe DESPLATS" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/39814328" alt="Nathan" title="Nathan" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/67785358" alt="Baekilda" title="Baekilda" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/84347978" alt="coddess-development" title="coddess-development" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/125120232" alt="TranspaClean" title="TranspaClean" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/145757616" alt="Let&#39;s Dial" title="Let&#39;s Dial" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/6165538" alt="Stevie Huh" title="Stevie Huh" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/777635" alt="Luiz Alves" title="Luiz Alves" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/8967329" alt="José Jaime" title="José Jaime" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/37066803" alt="antoineLZCH" title="antoineLZCH" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/69112538" alt="tryfps" title="tryfps" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/13478652" alt="Igor Trindade" title="Igor Trindade" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/8052095" alt="Jared Dunham" title="Jared Dunham" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+              <div class="my-1 mx-1">
+                <img src="./AdonisJS - A fully featured web framework for Node.js_files/130389858" alt="Syntax" title="Syntax" class="w-11 h-11 rounded-md border border-sanda5 md:w-14 md:h-14" loading="lazy">
+              </div>
+          </div>
+        </div>
+
+        <div class="md:w-3/12">
+          <div class="gap-y-2 flex flex-col pr-5 md:pr-0">
+              <div class="bg-white shadow-card rounded-md h-20 flex items-center justify-center text-sand12">
+                <a href="https://relancer.com/?utm_source=adonisjs.com" target="_blank">
+                  <svg class="h-auto w-[125px]" viewBox="0 0 110 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42.9549 16.0313H42.4701V20.7629H39.6777V7.80933H43.4203C44.4028 7.80933 45.185 7.89333 45.7667 8.06133C46.3614 8.22943 46.885 8.52033 47.3374 8.93403C48.126 9.63213 48.5203 10.5887 48.5203 11.8039C48.5203 13.2906 48.0808 14.3636 47.2017 15.023C46.9044 15.2557 46.5553 15.4496 46.1545 15.6047L49.4705 20.123L47.3762 21.4028L43.5367 16.0119C43.4203 16.0249 43.2264 16.0313 42.9549 16.0313ZM45.1462 13.5686C45.5987 13.2583 45.8249 12.7412 45.8249 12.0172C45.8249 11.2804 45.6374 10.7374 45.2625 10.3883C44.9006 10.0393 44.1378 9.86483 42.9743 9.86483H42.4701V13.9758H42.6834C43.9633 13.9758 44.7842 13.8401 45.1462 13.5686Z" fill="#222222"></path>
+<path d="M52.6194 16.0701C52.6452 18.0093 53.4985 18.9789 55.1791 18.9789C55.9677 18.9789 56.7498 18.8302 57.5255 18.5328L57.9909 20.3751C56.9954 20.8017 55.8901 21.015 54.6749 21.015C51.611 21.015 50.0791 19.2116 50.0791 15.6047C50.0791 14.1826 50.4605 12.9998 51.2232 12.056C51.9859 11.1123 53.0848 10.6404 54.5198 10.6404C55.6703 10.6404 56.5559 10.9507 57.1764 11.5712C57.8099 12.1788 58.1266 13.0321 58.1266 14.1309C58.1266 14.7773 58.0426 15.4237 57.8745 16.0701H52.6194ZM55.9548 14.5963V14.48C55.9548 13.2001 55.5023 12.5602 54.5973 12.5602C53.5114 12.5602 52.8586 13.2389 52.6388 14.5963H55.9548Z" fill="#222222"></path>
+<path d="M64.8257 20.5884C64.1664 20.8728 63.5265 21.015 62.906 21.015C62.2854 21.015 61.7748 20.9439 61.374 20.8017C60.9733 20.6595 60.6695 20.4979 60.4626 20.3169C60.2687 20.1359 60.12 19.8709 60.0166 19.5218C59.9132 19.1728 59.8485 18.8819 59.8227 18.6492C59.8098 18.4036 59.8033 18.0674 59.8033 17.6408V7.18872H62.5375V17.796C62.5375 18.1709 62.5892 18.4359 62.6927 18.591C62.809 18.7462 63.0352 18.8237 63.3714 18.8237C63.7075 18.8237 64.0565 18.7785 64.4185 18.688L64.8257 20.5884Z" fill="#222222"></path>
+<path d="M74.7465 20.4332C74.0872 20.7952 73.3632 20.9762 72.5746 20.9762C71.799 20.9762 71.2237 20.6789 70.8488 20.0842C70.099 20.7047 69.2199 21.015 68.2115 21.015C67.2031 21.015 66.4404 20.7629 65.9233 20.2587C65.4062 19.7416 65.1476 19.0435 65.1476 18.1644C65.1476 17.5827 65.2704 17.0849 65.5161 16.6712C65.7617 16.2576 66.0784 15.9538 66.4662 15.7598C67.1773 15.4237 67.9142 15.2557 68.6769 15.2557C69.4526 15.2557 70.0731 15.275 70.5385 15.3138V14.3636C70.5385 13.6914 70.4028 13.2583 70.1313 13.0644C69.8598 12.8705 69.3944 12.7735 68.7351 12.7735C68.0887 12.7735 67.3583 12.9093 66.5438 13.1807L65.9815 11.4743C66.4598 11.1899 67.0415 10.9766 67.7267 10.8344C68.4248 10.6792 69.0195 10.6017 69.5107 10.6017C70.8294 10.6017 71.7666 10.8861 72.3225 11.4549C72.8913 12.0108 73.1758 12.9674 73.1758 14.3249V18.3971C73.1758 18.7591 73.3374 18.9401 73.6606 18.9401C73.8286 18.9401 74.0678 18.9013 74.378 18.8237L74.7465 20.4332ZM68.9484 19.2116C69.4913 19.2116 70.0214 19.0435 70.5385 18.7074V16.6712C70.1765 16.6454 69.8598 16.6325 69.5883 16.6325C68.3085 16.6325 67.6685 17.0461 67.6685 17.8735C67.6685 18.7655 68.0951 19.2116 68.9484 19.2116Z" fill="#222222"></path>
+<path d="M81.3351 10.6404C82.4598 10.6404 83.2226 10.9313 83.6233 11.5131C84.037 12.0819 84.2439 12.8963 84.2439 13.9564V20.7629H81.529V14.4412C81.529 13.937 81.445 13.5492 81.2769 13.2777C81.1218 12.9933 80.734 12.8511 80.1134 12.8511C79.4929 12.8511 78.9305 13.0902 78.4264 13.5686V20.7629H75.6533V10.815H77.9416L78.1743 11.9203C78.5492 11.5712 79.021 11.2739 79.5899 11.0283C80.1716 10.7697 80.7534 10.6404 81.3351 10.6404Z" fill="#222222"></path>
+<path d="M90.467 21.015C89.135 21.015 88.03 20.5884 87.151 19.7351C86.272 18.869 85.832 17.5697 85.832 15.8374C85.832 14.0922 86.265 12.7929 87.131 11.9397C87.997 11.0735 89.109 10.6404 90.467 10.6404C91.268 10.6404 92.18 10.7891 93.201 11.0864L92.677 13.045C91.889 12.864 91.255 12.7735 90.777 12.7735C90.014 12.7735 89.426 13.0062 89.012 13.4716C88.611 13.9241 88.411 14.7321 88.411 15.8956C88.411 17.0591 88.631 17.8671 89.07 18.3195C89.523 18.772 90.15 18.9982 90.951 18.9982C91.365 18.9982 91.999 18.9336 92.852 18.8043L93.181 20.569C92.16 20.8663 91.255 21.015 90.467 21.015Z" fill="#222222"></path>
+<path d="M96.6099 16.0701C96.6359 18.0093 97.4899 18.9789 99.1699 18.9789C99.9589 18.9789 100.741 18.8302 101.517 18.5328L101.982 20.3751C100.986 20.8017 99.8809 21.015 98.6659 21.015C95.6019 21.015 94.0699 19.2116 94.0699 15.6047C94.0699 14.1826 94.4509 12.9998 95.2139 12.056C95.9769 11.1123 97.0759 10.6404 98.5109 10.6404C99.6609 10.6404 100.547 10.9507 101.167 11.5712C101.801 12.1788 102.118 13.0321 102.118 14.1309C102.118 14.7773 102.034 15.4237 101.866 16.0701H96.6099ZM99.9459 14.5963V14.48C99.9459 13.2001 99.4929 12.5602 98.5879 12.5602C97.5019 12.5602 96.8499 13.2389 96.6299 14.5963H99.9459Z" fill="#222222"></path>
+<path d="M108.72 12.8123C107.66 12.8123 106.916 13.1161 106.49 13.7237V20.7629H103.775V10.815H106.024L106.238 12.0754C106.988 11.0929 107.944 10.6017 109.108 10.6017C109.431 10.6017 109.728 10.634 110 10.6986L109.554 12.9287C109.269 12.8511 108.991 12.8123 108.72 12.8123Z" fill="#222222"></path>
+<mask id="mask0_627_21" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="0" width="15" height="29">
+<path d="M28.3778 0.125916H14.252V28.3775H28.3778V0.125916Z" fill="#D65C4B"></path>
+</mask>
+<g mask="url(#mask0_627_21)">
+<path d="M14.2528 28.3779C22.0542 28.3779 28.3786 22.0536 28.3786 14.2521C28.3786 6.45068 22.0542 0.126343 14.2528 0.126343C6.45129 0.126343 0.126953 6.45068 0.126953 14.2521C0.126953 22.0536 6.45129 28.3779 14.2528 28.3779Z" fill="#EE8B7B"></path>
+</g>
+<mask id="mask1_627_21" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29" height="29">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2528 28.3775C22.0542 28.3775 28.3786 22.0531 28.3786 14.2517C28.3786 6.45021 22.0542 0.125916 14.2528 0.125916C6.45125 0.125916 0.126953 6.45021 0.126953 14.2517C0.126953 22.0531 6.45125 28.3775 14.2528 28.3775ZM14.2535 21.3146C18.1542 21.3146 21.3164 18.1525 21.3164 14.2517C21.3164 10.351 18.1542 7.18882 14.2535 7.18882C10.3527 7.18882 7.19055 10.351 7.19055 14.2517C7.19055 18.1525 10.3527 21.3146 14.2535 21.3146Z" fill="#F1CAB9"></path>
+</mask>
+<g mask="url(#mask1_627_21)">
+<path d="M0.126953 -4.11194H14.2528V32.6151H0.126953V-4.11194Z" fill="#F1CAB9"></path>
+</g>
+</svg>
+
+                </a>
+              </div>
+              <div class="bg-white shadow-card rounded-md h-20 flex items-center justify-center text-sand12">
+                <a href="https://www.toolzz.com.br/?utm_source=adonisjs.com" target="_blank">
+                  <svg class="h-auto w-[125px]" viewBox="0 0 747 182" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.739 181.113h145.635a17.828 17.828 0 0 0 17.739-17.739V17.739A17.829 17.829 0 0 0 163.374 0H17.739A17.828 17.828 0 0 0 0 17.739v145.635a17.828 17.828 0 0 0 17.739 17.739ZM13.305 13.305a6.35 6.35 0 0 1 4.435-1.86h145.634a6.349 6.349 0 0 1 6.295 6.294v145.635a6.348 6.348 0 0 1-6.295 6.294H17.74a6.35 6.35 0 0 1-6.295-6.294V17.739a6.351 6.351 0 0 1 1.86-4.434ZM30.901 60.74h23.462v71.53h14.592v-71.53h23.462v-14.02H30.901v14.02Zm119.307 13.734-28.612 44.348h27.472v13.734h-52.36l28.612-44.348H98.708V74.475h51.5Zm102.721-18.11h29.756l-.002 90.414h18.6V56.365h29.756V38.626h-78.11v17.739Zm152.505 53.79c0 21.459-17.167 38.34-39.2 38.34-21.745 0-39.2-16.881-39.2-38.34 0-21.745 17.167-38.34 39.2-38.34s39.2 16.881 39.2 38.34Zm-18.6 0c0-11.445-7.725-21.173-20.314-21.173s-20.314 9.728-20.314 21.173c0 11.445 7.725 21.173 20.314 21.173s20.314-9.728 20.314-21.173Zm66.38 38.34c22.033 0 39.2-16.881 39.2-38.34 0-21.459-17.456-38.34-39.2-38.34-22.033 0-39.2 16.595-39.2 38.34 0 21.459 17.455 38.34 39.2 38.34Zm.002-59.513c12.589 0 20.314 9.728 20.314 21.173h-.003c0 11.445-7.722 21.173-20.311 21.173-12.589 0-20.314-9.728-20.314-21.173 0-11.445 7.725-21.173 20.314-21.173Zm54.931-58.94h18.6v116.737h-18.6V30.042Zm66.093 99.283 36.337-55.793h-65.235v17.167h33.762l-36.337 55.793h66.093v-17.167h-34.62Zm112.731-55.793-36.337 55.793h34.62v17.167h-66.093l36.337-55.793h-33.762V73.532h65.235Zm48.101-39.34a26.323 26.323 0 0 0-14.624-4.436 26.017 26.017 0 0 0-18.706 7.617 26.006 26.006 0 0 0-7.617 18.706 26.326 26.326 0 0 0 16.25 24.32 26.32 26.32 0 0 0 35.89-19.184 26.32 26.32 0 0 0-11.193-27.022Zm-3.02 39.253a20.886 20.886 0 0 1-11.604 3.52v.001a20.821 20.821 0 0 1-20.886-20.888 20.887 20.887 0 1 1 32.49 17.367ZM712.436 42.06h-.288l.288-.003v.003Zm8.582 0h-8.582v26.897h4.578v-10.3h2l6.581 10.3h5.437l-7.153-10.586a7.747 7.747 0 0 0 6.295-8.01c0-4.868-3.72-8.3-9.156-8.3Zm4.863 8.297c0 2.861-2.003 4.292-5.15 4.292l.003-.284h-3.719v-8.3h3.716c3.15 0 5.15 1.431 5.15 4.292Z" fill="#0761E2"></path></svg>
+
+                </a>
+              </div>
+              <div class="bg-white shadow-card rounded-md h-20 flex items-center justify-center text-sand12">
+                <a href="https://route4me.com/?utm_source=adonisjs.com" target="_blank">
+                  <svg width="150" height="36" viewBox="0 0 150 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38.9337 13.4895H41.1147C41.4378 13.4895 41.8417 13.4895 42.1648 13.4895C42.5686 13.4895 42.8917 13.4087 43.2148 13.2472C43.5379 13.0856 43.7803 12.9241 43.9418 12.6818C44.1034 12.4394 44.2649 12.0355 44.2649 11.6317C44.2649 11.2278 44.1841 10.8239 44.0226 10.5816C43.861 10.3393 43.6187 10.0969 43.3764 10.0162C43.1341 9.85461 42.811 9.77384 42.4879 9.77384C42.1648 9.69306 41.7609 9.69306 41.4378 9.69306H39.0145V13.4895H38.9337ZM35.2181 6.46204H41.7609C42.6494 6.46204 43.4572 6.54282 44.1841 6.70437C44.9919 6.86592 45.6381 7.18902 46.2035 7.51212C46.769 7.916 47.2536 8.40065 47.5767 9.12763C47.8998 9.77384 48.0614 10.6624 48.0614 11.6317C48.0614 12.8433 47.7383 13.8934 47.0921 14.7011C46.4459 15.5089 45.5573 16.0743 44.3457 16.3166L48.6268 23.5057H44.1841L40.63 16.7205H38.7722V23.5057H35.0565V6.46204H35.2181Z" fill="#425277"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M53.3926 17.6091C53.3926 18.4976 53.6349 19.2246 54.1195 19.79C54.6042 20.3554 55.3312 20.5977 56.2197 20.5977C57.1082 20.5977 57.8352 20.3554 58.3199 19.79C58.8045 19.2246 59.0468 18.4976 59.0468 17.6091C59.0468 16.7205 58.8045 15.9935 58.3199 15.4281C57.8352 14.8627 57.1082 14.6204 56.2197 14.6204C55.3312 14.6204 54.6042 14.8627 54.1195 15.4281C53.6349 16.0743 53.3926 16.7205 53.3926 17.6091ZM49.8384 17.6091C49.8384 16.6397 50 15.832 50.3231 15.105C50.6462 14.378 51.1308 13.7318 51.6963 13.1664C52.2617 12.601 52.9887 12.1971 53.7157 11.9548C54.5234 11.6317 55.3312 11.5509 56.2197 11.5509C57.1082 11.5509 57.916 11.7124 58.7237 11.9548C59.5315 12.2779 60.1777 12.6818 60.7431 13.1664C61.3086 13.7318 61.7932 14.378 62.1163 15.105C62.4394 15.832 62.601 16.7205 62.601 17.6091C62.601 18.5784 62.4394 19.3861 62.1163 20.1131C61.7932 20.8401 61.3086 21.4863 60.7431 22.0517C60.1777 22.6171 59.4507 23.021 58.7237 23.2633C57.916 23.5864 57.1082 23.6672 56.2197 23.6672C55.3312 23.6672 54.5234 23.5057 53.7157 23.2633C52.9079 22.9402 52.2617 22.5364 51.6963 22.0517C51.1308 21.4863 50.6462 20.8401 50.3231 20.1131C50 19.3861 49.8384 18.5784 49.8384 17.6091Z" fill="#425277"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M75.929 23.5057H72.4556V21.8902H72.3748C72.2133 22.1325 72.0517 22.3748 71.8902 22.5364C71.7286 22.7787 71.4863 22.9403 71.1632 23.1826C70.8401 23.3441 70.517 23.5057 70.1939 23.5865C69.79 23.6672 69.4669 23.748 68.9823 23.748C68.0937 23.748 67.3668 23.5865 66.8013 23.3441C66.2359 23.1018 65.832 22.6979 65.5089 22.2133C65.1858 21.7286 65.0243 21.1632 64.8627 20.4362C64.782 19.79 64.7012 19.063 64.7012 18.2553V11.7932H68.2553V17.5283C68.2553 17.8514 68.2553 18.1745 68.2553 18.5784C68.2553 18.9015 68.3361 19.3054 68.4976 19.5477C68.6592 19.79 68.8207 20.1131 69.063 20.2747C69.3054 20.4362 69.6285 20.5978 70.1131 20.5978C70.5978 20.5978 70.9209 20.517 71.244 20.3554C71.5671 20.1939 71.7286 19.9516 71.8902 19.7092C72.0517 19.4669 72.1325 19.1438 72.2133 18.7399C72.2941 18.4168 72.2941 18.013 72.2941 17.6091V11.7932H75.929V23.5057Z" fill="#425277"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M86.3489 14.7011H83.1987V18.5784C83.1987 18.9015 83.1987 19.2246 83.2794 19.4669C83.2794 19.7092 83.3602 19.9515 83.5218 20.1131C83.6026 20.2746 83.7641 20.4362 84.0064 20.5977C84.2488 20.6785 84.5719 20.7593 84.895 20.7593C85.0565 20.7593 85.2988 20.7593 85.6219 20.6785C85.945 20.6785 86.1874 20.517 86.3489 20.4362V23.4249C85.945 23.5864 85.5412 23.6672 85.1373 23.748C84.7334 23.8288 84.2488 23.8288 83.8449 23.8288C83.2795 23.8288 82.714 23.748 82.1486 23.6672C81.6639 23.5057 81.1793 23.3441 80.7754 23.021C80.3715 22.7787 80.1292 22.3748 79.8869 21.8902C79.6446 21.4055 79.5638 20.9208 79.5638 20.2746V14.7011H77.3021V11.7932H79.5638V8.31988H83.1179V11.7932H86.2681V14.7011H86.3489Z" fill="#425277"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M96.1228 16.3166C96.1228 15.6704 95.9612 15.1858 95.5573 14.7819C95.1535 14.378 94.588 14.1357 93.9418 14.1357C93.5379 14.1357 93.2148 14.2165 92.8917 14.2973C92.5686 14.4588 92.3263 14.6204 92.084 14.7819C91.8417 15.0242 91.6801 15.1858 91.5993 15.5089C91.5186 15.7512 91.4378 16.0743 91.357 16.3166H96.1228ZM99.1922 21.4863C98.6268 22.2133 97.8998 22.7787 97.0113 23.1826C96.1228 23.5864 95.2342 23.748 94.2649 23.748C93.3764 23.748 92.5686 23.5864 91.7609 23.3441C90.9531 23.021 90.3069 22.6171 89.7415 22.1325C89.1761 21.567 88.6914 20.9208 88.3683 20.1939C88.0452 19.4669 87.8837 18.5784 87.8837 17.6898C87.8837 16.7205 88.0452 15.9128 88.3683 15.1858C88.6914 14.4588 89.1761 13.8126 89.7415 13.2472C90.3069 12.6817 91.0339 12.2779 91.7609 12.0355C92.5686 11.7124 93.3764 11.6317 94.2649 11.6317C95.0727 11.6317 95.8804 11.7932 96.5266 12.0355C97.1728 12.3586 97.7383 12.7625 98.2229 13.2472C98.7076 13.8126 99.0307 14.4588 99.273 15.1858C99.5153 15.9128 99.6769 16.8013 99.6769 17.6898V18.8207H91.357C91.5186 19.5477 91.8417 20.0323 92.3263 20.4362C92.811 20.8401 93.3764 21.0824 94.1034 21.0824C94.6688 21.0824 95.1535 20.9208 95.5573 20.6785C95.9612 20.4362 96.2843 20.0323 96.6074 19.6284L99.1922 21.4863Z" fill="#425277"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M108.562 11.147L104.766 17.0436H108.562V11.147ZM108.562 20.1131H101.212V17.0436L108.078 6.46205H111.955V17.0436H114.136V20.1131H111.955V23.5057H108.481V20.1131H108.562Z" fill="#FFC63C"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M116.478 6.46205H122.052L126.01 17.6091L129.968 6.46205H135.541V23.5057H131.826V10.42H131.745L127.302 23.5057H124.475L120.194 10.42V23.5057H116.478V6.46205Z" fill="#425277"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M146.446 16.3166C146.446 15.6704 146.284 15.1858 145.88 14.7819C145.477 14.378 144.911 14.1357 144.265 14.1357C143.861 14.1357 143.538 14.2165 143.215 14.2973C142.892 14.4588 142.649 14.6204 142.407 14.7819C142.165 15.0242 142.003 15.1858 141.922 15.5089C141.842 15.7512 141.761 16.0743 141.68 16.3166H146.446ZM149.515 21.4863C148.95 22.2133 148.223 22.7787 147.334 23.1826C146.446 23.5864 145.557 23.748 144.588 23.748C143.7 23.748 142.892 23.5864 142.084 23.3441C141.276 23.021 140.63 22.6171 140.065 22.1325C139.499 21.567 139.015 20.9208 138.691 20.1939C138.368 19.4669 138.207 18.5784 138.207 17.6898C138.207 16.7205 138.368 15.9128 138.691 15.1858C139.015 14.4588 139.499 13.8126 140.065 13.2472C140.63 12.6817 141.357 12.2779 142.084 12.0355C142.892 11.7124 143.7 11.6317 144.588 11.6317C145.396 11.6317 146.204 11.7932 146.85 12.0355C147.496 12.3586 148.061 12.7625 148.546 13.2472C149.031 13.8126 149.354 14.4588 149.596 15.1858C149.838 15.9128 150 16.8013 150 17.6898V18.8207H141.68C141.842 19.5477 142.165 20.0323 142.649 20.4362C143.134 20.8401 143.7 21.0824 144.426 21.0824C144.992 21.0824 145.477 20.9208 145.88 20.6785C146.284 20.4362 146.607 20.0323 146.931 19.6284L149.515 21.4863Z" fill="#425277"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M28.1906 1.53473C28.1906 0.646204 28.9176 0 29.7253 0C30.6139 0 31.2601 0.726979 31.2601 1.53473C31.2601 2.42326 30.5331 3.06947 29.7253 3.06947C28.9176 3.15024 28.1906 2.42326 28.1906 1.53473Z" fill="#FF6400"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.53473C0 0.726979 0.726979 0 1.53473 0C2.42326 0 3.15024 0.726979 3.15024 1.53473C3.15024 2.42326 2.42326 3.15024 1.53473 3.15024C0.726979 3.15024 0 2.42326 0 1.53473Z" fill="#FF6400"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.2941 33.6834C22.2941 32.7948 23.021 32.1486 23.8288 32.1486C24.7173 32.1486 25.3635 32.8756 25.3635 33.6834C25.3635 34.5719 24.6366 35.2181 23.8288 35.2181C23.021 35.2181 22.2941 34.5719 22.2941 33.6834Z" fill="#FF6400"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0323 6.62363C20.2746 6.86595 20.2746 7.18906 20.0323 7.35061L17.3667 10.0162C17.1244 10.2585 17.2051 10.4201 17.5283 10.5816C19.063 11.1471 20.2746 12.3587 20.7593 13.8126C20.84 14.055 21.0824 14.1357 21.3247 13.9742L23.9903 11.3086C24.2326 11.0663 24.5557 11.0663 24.7173 11.3086L27.0598 13.6511C27.3021 13.8934 27.4636 13.8126 27.4636 13.4895V4.20036C27.4636 4.03881 27.3829 3.95804 27.2213 3.95804H17.8514C17.5282 3.95804 17.5282 4.11959 17.6898 4.36191L20.0323 6.62363ZM13.7318 10.5008C13.9741 10.4201 14.0549 10.1777 13.8934 9.93542L11.2278 7.26983C10.9854 7.0275 10.9854 6.7044 11.2278 6.54285L13.5703 4.20036C13.8126 3.95804 13.7318 3.79649 13.4087 3.79649H4.2003C4.03875 3.95804 3.8772 4.03881 3.8772 4.20036V13.4895C3.8772 13.8126 4.03875 13.8126 4.28107 13.6511L6.62356 11.3086C6.86589 11.0663 7.18899 11.0663 7.35054 11.3086L10.0161 13.9742C10.2585 14.2165 10.42 14.1357 10.5816 13.8126C11.0662 12.2779 12.2778 11.0663 13.7318 10.5008ZM15.9127 21.1632C15.5896 21.1632 15.5089 21.4055 15.5896 21.6479L17.1244 25.0404C17.2051 25.2828 17.1244 25.6059 16.882 25.7674L13.8934 27.1406C13.651 27.3021 13.651 27.4637 13.8934 27.5445L22.6171 30.6947C22.7787 30.7755 22.9402 30.6947 22.9402 30.5332L26.1712 21.8094C26.252 21.5671 26.1712 21.4055 25.8481 21.5671L22.8594 22.9403C22.6171 23.1018 22.294 22.9403 22.1324 22.6979L20.4362 19.063C20.3554 18.8207 20.1131 18.8207 19.9515 18.9823C19.4669 19.6285 18.8207 20.1939 18.0129 20.5978C17.5282 20.8401 16.882 21.0017 16.3166 21.0824C16.3166 21.0824 16.0743 21.1632 15.9127 21.1632Z" fill="#FFC63C"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.7124 15.6705C11.7124 13.4895 13.4895 11.7932 15.5896 11.7932C17.7706 11.7932 19.4668 13.5703 19.4668 15.6705C19.4668 17.8514 17.6898 19.6285 15.5896 19.6285C13.4895 19.5477 11.7124 17.8514 11.7124 15.6705Z" fill="#FF6400"></path>
+</svg>
+
+                </a>
+              </div>
+              <div class="bg-white shadow-card rounded-md h-20 flex items-center justify-center text-sand12">
+                <a href="https://ezycourse.com/?utm_source=adonisjs.com" target="_blank">
+                  <svg class="h-auto w-[160px]" viewBox="0 0 222 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M73.2093 27.3828C73.2724 26.9092 73.2724 26.5619 73.2724 25.9936C73.2724 21.9207 71.3465 17.8477 65.7581 17.8477C60.4853 17.8477 57.8647 21.5102 57.8647 26.6566C57.8647 30.9505 60.2012 34.9603 65.6002 34.9603C70.715 34.9603 72.5147 31.6767 73.083 29.6876H68.5681C68.126 30.6663 67.5893 31.4241 65.6949 31.4241C63.4532 31.4241 62.4113 29.435 62.4113 27.3828H73.2093ZM62.506 24.6043C62.6954 22.5837 63.5796 21.0997 65.7265 21.0997C67.9366 21.0997 68.6944 22.7099 68.7259 24.6043H62.506ZM75.8832 34.5814H89.1123L89.6491 31.0136H81.1559L89.0807 21.7627V18.2265H76.262V21.7943H83.9658L75.8832 31.1716V34.5814ZM91.3885 18.2265L97.3558 35.0866C96.7244 36.8863 95.9034 37.4546 94.23 37.4546C93.8512 37.4546 93.3776 37.423 93.0619 37.3914V41.0223C93.8512 41.1171 94.7668 41.1487 95.1772 41.1487C99.0923 41.1487 100.419 39.7594 101.966 35.0551L107.46 18.2265H102.945C101.018 25.1095 100.04 28.772 99.6922 30.4138H99.6606C99.408 28.8983 97.9241 23.8781 96.2508 18.2265H91.3885ZM119.856 29.3088C119.446 30.5401 118.625 31.4557 117.047 31.4557C115.088 31.4557 113.826 29.8771 113.826 26.3724C113.826 23.2152 114.994 21.4154 117.078 21.4154C118.846 21.4154 119.604 22.331 119.888 23.6571H124.277C124.213 21.8259 122.666 17.8477 117.172 17.8477C112.184 17.8477 109.248 21.6996 109.248 26.5303C109.248 31.4557 111.869 34.9603 116.951 34.9603C121.814 34.9603 123.739 32.024 124.277 29.3088H119.856ZM135.23 17.8477C130.052 17.8477 126.99 21.4154 126.99 26.4671C126.99 31.3294 129.958 34.9603 135.01 34.9603C140.188 34.9603 143.155 31.3294 143.155 26.3724C143.155 21.2576 140.03 17.8477 135.23 17.8477ZM135.041 21.4154C137.314 21.4154 138.578 23.0257 138.578 26.4355C138.578 29.5613 137.346 31.4241 135.104 31.4241C132.926 31.4241 131.568 29.5613 131.568 26.404C131.568 22.9625 132.957 21.4154 135.041 21.4154ZM161.281 18.2265H156.766V26.9407C156.766 30.1612 155.914 31.2662 153.861 31.2662C151.904 31.2662 151.335 29.7823 151.335 27.9827V18.2265H146.82V28.8983C146.82 32.9396 148.936 34.9603 152.252 34.9603C154.367 34.9603 155.787 34.3289 156.766 32.687C156.798 33.2553 156.829 34.1394 156.892 34.5814H161.312C161.281 33.1291 161.281 31.3925 161.281 29.8455V18.2265ZM165.984 34.5814H170.531V27.4459C170.531 22.9625 172.488 22.0785 175.772 22.1732V17.8477C172.993 17.8792 171.257 19.2369 170.531 21.0997C170.531 20.2157 170.467 18.6054 170.404 18.2265H165.952C165.984 19.6158 165.984 21.0365 165.984 22.6783V34.5814ZM177.936 29.656C178.315 32.5607 180.336 34.9603 185.324 34.9603C190.281 34.9603 192.365 32.4976 192.365 29.7823C192.365 27.3828 191.575 25.5199 186.114 24.257C183.461 23.6255 182.956 23.2466 182.956 22.4258C182.956 21.6996 183.461 21.0365 184.946 21.0365C187.061 21.0365 187.472 22.1732 187.629 22.7731H191.923C191.797 20.563 190.092 17.8477 185.135 17.8477C180.21 17.8477 178.536 20.4051 178.536 22.8047C178.536 25.1095 179.389 26.7513 184.725 28.0773C187.061 28.6457 187.755 29.0561 187.755 30.098C187.755 31.1084 187.156 31.7083 185.482 31.7083C183.809 31.7083 182.735 30.9821 182.388 29.656H177.936ZM210.474 27.3828C210.536 26.9092 210.536 26.5619 210.536 25.9936C210.536 21.9207 208.611 17.8477 203.023 17.8477C197.749 17.8477 195.129 21.5102 195.129 26.6566C195.129 30.9505 197.465 34.9603 202.865 34.9603C207.979 34.9603 209.779 31.6767 210.347 29.6876H205.832C205.39 30.6663 204.853 31.4241 202.959 31.4241C200.717 31.4241 199.675 29.435 199.675 27.3828H210.474ZM199.77 24.6043C199.96 22.5837 200.844 21.0997 202.99 21.0997C205.2 21.0997 205.959 22.7099 205.99 24.6043H199.77Z" fill="black"></path>
+<path d="M49.6439 42.8238H27.5591V36.8612L40.9747 20.935H33.0575C32.0927 20.935 31.2025 20.4157 30.7277 19.5758L28.1475 15.0117H49.487V19.4277C49.487 20.2741 49.1862 21.093 48.6381 21.7381L35.7575 36.9005H46.0753C48.0462 36.9005 49.6439 38.4981 49.6439 40.4691V42.8238Z" fill="#5551FF"></path>
+<path d="M22.5044 42.8584L41.0494 20.959L32.7462 37.198L33.1871 42.7824L22.5044 42.8584Z" fill="#5551FF"></path>
+<path d="M11.0698 17.6764C11.0698 16.1974 12.2694 14.9988 13.7484 15L24.5034 15.0088C25.8389 15.0098 27.062 15.7565 27.6733 16.9438L29.7278 20.9343L13.7493 20.9524C12.27 20.9541 11.0698 19.7553 11.0698 18.276V17.6764Z" fill="black"></path>
+<path d="M11.0698 28.7687C11.0698 27.081 12.4379 25.7129 14.1255 25.7129H34.8219L29.5597 31.8243H14.1255C12.4379 31.8243 11.0698 30.4562 11.0698 28.7687Z" fill="black"></path>
+<path d="M17.1813 25.7129V42.5063L15.4665 42.4816C13.0281 42.4467 11.0698 40.46 11.0698 38.0214L11.0698 29.2815C11.0698 27.3106 12.6675 25.7129 14.6384 25.7129H17.1813Z" fill="black"></path>
+<path d="M11.0698 36.7109H25.7327L20.4792 42.8224H14.6384C12.6675 42.8224 11.0698 41.2247 11.0698 39.2538V36.7109Z" fill="black"></path>
+</svg>
+
+                </a>
+              </div>
+            <div class="bg-white shadow-card rounded-md h-20 flex items-center justify-center text-sand12">
+                <a href="https://github.com/sponsors/thetutlage/sponsorships?tier_id=379745&amp;preview=false&amp;pay_prorated=false" target="_blank" class="text-sand10 uppercase font-semibold text-[14px] tracking-wide">
+                  Your logo
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</div>
+
+  </main>
+<div class="relative bg-white">
+  <div class="absolute inset-0 justify-center pointer-events-none hidden lg:flex" style="--marker-color: var(--sand-4)">
+    <div class="content-container relative h-full w-full guides_markers"></div>
+  </div>
+
+  <div class="relative z-1">
+    
+<footer class="py-20">
+  <div class="content-container">
+    <div class="grid md:grid-cols-2">
+      <div class="md:pr-24">
+        <div>
+          <div class="text-sand12 mb-4"><svg viewBox="0 0 108 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 95px; top: 2px; position: relative;">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 16.3331C0 29.506 3.16017 32.6662 16.3331 32.6662C29.506 32.6662 32.6662 29.506 32.6662 16.3331C32.6662 3.16017 29.506 0 16.3331 0C3.16017 0 0 3.16017 0 16.3331ZM6.58646 19.7261L11.7093 8.08338C12.5742 6.12075 14.2374 5.05627 16.3331 5.05627C18.4288 5.05627 20.092 6.12075 20.9569 8.08338L26.0797 19.7261C26.3126 20.2916 26.5122 21.0235 26.5122 21.6555C26.5122 24.5495 24.483 26.5787 21.589 26.5787C20.6032 26.5787 19.8203 26.3271 19.0278 26.0725C18.2158 25.8116 17.3937 25.5475 16.3331 25.5475C15.2847 25.5475 14.4426 25.814 13.6145 26.076C12.8136 26.3294 12.0258 26.5787 11.0772 26.5787C8.18318 26.5787 6.15402 24.5495 6.15402 21.6555C6.15402 21.0235 6.35361 20.2916 6.58646 19.7261ZM16.3331 10.1125L11.2768 21.5557C12.7737 20.8571 14.5035 20.5245 16.3331 20.5245C18.0961 20.5245 19.8924 20.8571 21.3228 21.5557L16.3331 10.1125Z" fill="currentColor"></path>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M94.0883 8.03894C92.9542 8.03894 92.1352 8.84223 92.1352 9.96054C92.1352 11.0788 92.9542 11.8821 94.0883 11.8821C95.2223 11.8821 96.0414 11.0788 96.0414 9.96054C96.0414 8.84223 95.2223 8.03894 94.0883 8.03894ZM58.3654 24.5458C55.3413 24.5458 53.1519 22.3097 53.1519 18.8125C53.1519 15.2523 55.3413 13.0162 58.3654 13.0162C59.7673 13.0162 60.8068 13.4887 61.4211 14.418V8.54297H64.5713V24.2938H61.4211V23.1755C60.8226 24.089 59.783 24.5458 58.3654 24.5458ZM56.3651 18.8125C56.3651 16.8594 57.4204 15.5836 59.027 15.5836C60.6493 15.5836 61.6889 16.8436 61.6889 18.7967C61.6889 20.7183 60.6493 21.9627 59.027 21.9627C57.4204 21.9627 56.3651 20.7183 56.3651 18.8125ZM69.517 18.781C69.517 16.8436 70.5723 15.5993 72.1474 15.5993C73.7382 15.5993 74.7935 16.8436 74.7935 18.781C74.7935 20.7183 73.7382 21.9627 72.1474 21.9627C70.5723 21.9627 69.517 20.7183 69.517 18.781ZM104.232 21.2854C104.232 21.8681 103.791 22.2147 102.672 22.2147C101.412 22.2147 100.625 21.5531 100.625 20.7498H97.4747C97.5535 22.9235 99.6168 24.5458 102.609 24.5458C105.445 24.5458 107.256 23.2857 107.256 21.0491C107.256 19.3795 106.185 18.214 104.059 17.7887L101.775 17.3319C101.082 17.1902 100.672 16.8436 100.672 16.3869C100.672 15.7096 101.365 15.3473 102.247 15.3473C103.507 15.3473 103.996 15.9301 103.996 16.6231H106.988C106.909 14.5755 105.303 13.0162 102.31 13.0162C99.5223 13.0162 97.6322 14.418 97.6322 16.5444C97.6322 18.466 98.8765 19.3323 100.735 19.726L103.003 20.2143C103.744 20.3718 104.232 20.6868 104.232 21.2854ZM95.6791 24.2938H92.5289V13.2682H95.6791V24.2938ZM82.8895 13.2682V14.418C83.6927 13.4887 84.7638 13.0162 86.0869 13.0162C88.5597 13.0162 90.1663 14.6228 90.1663 17.1114V24.2938H87.0162V17.7729C87.0162 16.4341 86.2601 15.6308 84.9528 15.6308C83.6455 15.6308 82.8895 16.4341 82.8895 17.7729V24.2938H79.7393V13.2682H82.8895ZM72.1474 13.0162C68.7925 13.0162 66.3039 15.4418 66.3039 18.781C66.3039 22.1202 68.7925 24.5458 72.1474 24.5458C75.5181 24.5458 78.0067 22.1202 78.0067 18.781C78.0067 15.4418 75.5181 13.0162 72.1474 13.0162ZM45.8751 15.5836C44.2685 15.5836 43.2132 16.8594 43.2132 18.8125C43.2132 20.7183 44.2685 21.9627 45.8751 21.9627C47.4974 21.9627 48.5369 20.7183 48.5369 18.7967C48.5369 16.8436 47.4974 15.5836 45.8751 15.5836ZM40 18.8125C40 22.3097 42.1894 24.5458 45.1978 24.5458C46.6311 24.5458 47.6549 24.089 48.2692 23.1755V24.2938H51.4193V13.2682H48.2692V14.418C47.6391 13.4887 46.5996 13.0162 45.1978 13.0162C42.1894 13.0162 40 15.2523 40 18.8125Z" fill="currentColor"></path>
+</svg>
+
+          </div>
+
+          <p class="text-[14px]">
+            AdonisJS is not yet another micro-framework or a wrapper on top of everything that already exists. Instead, we have written AdonisJS from scratch to be simple, elegant, and opinionated.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid pt-12 gap-y-4 md:grid-cols-3 md:gap-y-0 md:gap-x-4 md:pl-12 md:pt-0">
+          <div>
+            <h5 class="text-sand12 mb-2 text-[14px] font-semibold mt-2 md:mb-2">
+              Community
+            </h5>
+            <nav class="flex flex-col">
+                <a href="https://discord.gg/vDcEjq6" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  Discord
+                </a>
+                <a href="https://twitter.com/adonisframework" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  Twitter
+                </a>
+                <a href="https://github.com/adonisjs" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  GitHub
+                </a>
+                <a href="https://github.com/adonisjs/core/discussions" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  Forum
+                </a>
+            </nav>
+          </div>
+          <div>
+            <h5 class="text-sand12 mb-2 text-[14px] font-semibold mt-2 md:mb-2">
+              Resources
+            </h5>
+            <nav class="flex flex-col">
+                <a href="https://adonisjs.com/about" up-follow="" up-preload="" up-target="[layout-hero], [layout-main]" up-scroll="reset" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13 up-can-clean">
+                  About
+                </a>
+                <a href="https://adonisjs.com/blog" up-follow="" up-preload="" up-target="[layout-hero], [layout-main]" up-scroll="reset" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13 up-can-clean">
+                  Blog
+                </a>
+                <a href="https://adonisjs.com/contact" up-follow="" up-preload="" up-target="[layout-hero], [layout-main]" up-scroll="reset" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13 up-can-clean">
+                  Partnership
+                </a>
+                <a href="https://packages.adonisjs.com/" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  Packages
+                </a>
+                <a href="https://github.com/adonisjs/.github/blob/main/docs/CODE_OF_CONDUCT.md" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  Code of Conduct
+                </a>
+                <a href="https://www.notion.so/adonisjs/Welcome-to-the-AdonisJS-Brand-Assets-Guidelines-a042a6d0be7640c6bc78eb32e1bbaaa1" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  Brand guidelines
+                </a>
+                <a href="https://v5-docs.adonisjs.com/" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  V5 Documentation
+                </a>
+            </nav>
+          </div>
+          <div>
+            <h5 class="text-sand12 mb-2 text-[14px] font-semibold mt-2 md:mb-2">
+              VSCode Extensions
+            </h5>
+            <nav class="flex flex-col">
+                <a href="https://marketplace.visualstudio.com/items?itemName=jripouteau.adonis-vscode-extension" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  AdonisJS
+                </a>
+                <a href="https://marketplace.visualstudio.com/items?itemName=AdonisJS.vscode-edge" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  Edge
+                </a>
+                <a href="https://marketplace.visualstudio.com/items?itemName=jripouteau.japa-vscode" up-scroll="reset" target="_blank" class="text-[14px] transition-colors ease-in-out duration-200 mb-1.5 focus:text-sand13 hover:text-sand13">
+                  Japa
+                </a>
+            </nav>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  </div>
+</div>
+
+
+    <script src="./AdonisJS - A fully featured web framework for Node.js_files/embed.js" async="" defer=""></script>
+  <script defer="" src="./AdonisJS - A fully featured web framework for Node.js_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;90bdf37d0928e3b9&quot;,&quot;version&quot;:&quot;2025.1.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;b3fcabc4c85744c3924d25d13183af75&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
+
+</body></html>
