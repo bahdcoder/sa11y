@@ -14,7 +14,7 @@ const corsConfig = defineConfig({
       return '*'
     }
 
-    return ['sa11y-app.ikigaya.dev']
+    return ['https://sa11y-app.ikigaya.dev']
   },
   methods: ['GET', 'HEAD', 'POST', 'PUT', 'DELETE'],
   headers: true,
