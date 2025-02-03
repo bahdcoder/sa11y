@@ -150,8 +150,8 @@ This application is designed to be able to horizontally scale easily, and we can
 
 # Improvements in the future 
 
-[ ] Add a failed state on the frontend when a job fails. The backend already tracks failures and reason for failure during job execution, and broadcasts them to the frontend, but the frontend does not display them yet.
-[ ] More E2E, Integration, API and unit tests 
-[ ] Containerise the applications for easy scaling and portability
-[ ] Fix a bug noticed in the Adonis Framework - Uploading an empty multipart form causes the entire request to just freeze with no response
-[ ] Add token API validation for better rate limiting (Super easy to do with AdonisJS as it has first party support)
+- [ ] Add a failed state on the frontend when a job fails. The backend already tracks failures and reason for failure during job execution, and broadcasts them to the frontend, but the frontend does not display them yet.
+- [ ] More E2E, Integration, API and unit tests 
+- [ ] Containerise the applications for easy scaling and portability
+- [ ] Fix a bug noticed in the Adonis Framework - Uploading an empty multipart form causes the entire request to just freeze with no response
+- [ ] Add token API validation for better rate limiting (Super easy to do with AdonisJS as it has first party support)
