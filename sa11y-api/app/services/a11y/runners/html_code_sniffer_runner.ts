@@ -45,9 +45,8 @@ export class HTMLCodeSnifferRunner implements A11yRunnerContract {
         return 'warning'
       case 3:
         return 'notice'
-
       default:
-        return 'unknown'
+        return 'notice'
     }
   }
 }

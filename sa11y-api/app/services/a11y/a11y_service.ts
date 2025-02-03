@@ -4,7 +4,7 @@ import { A11yReportContract } from '#services/a11y/contracts/a11y_report_contrac
 import app from '@adonisjs/core/services/app'
 import logger from '@adonisjs/core/services/logger'
 import drive from '@adonisjs/drive/services/main'
-import { codeToHtml } from 'shiki'
+
 import Puppeteer from 'puppeteer'
 
 export class A11yService {
