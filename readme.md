@@ -2,6 +2,9 @@
 
 Sa11y is a comprehensive accessibility testing platform that helps you check and score the accessibility of HTML documents. The platform consists of two main components: a backend API (sa11y-api) and a frontend client (sa11y-client).
 
+[View the hosted API application](https://sa11y-api.ikigaya.dev/)
+[View the hosted client application](https://sa11y-app.ikigaya.dev/)
+
 ![System Architecture](./assets/sa11y-upload.png)
 ![System Architecture](./assets/sa11y-report.png)
 
@@ -62,7 +65,8 @@ The scripts section of `package.json` file will provide you with all the command
 "test": "node ace test",
 "lint": "eslint .",
 "format": "prettier --write .",
-"typecheck": "tsc --noEmit"
+"typecheck": "tsc --noEmit",
+"queue:run": "node ace queue:listen"
 ```
 
 ## The Frontend (sa11y-client)
@@ -91,3 +95,63 @@ The scripts section of `package.json` file will provide you with all the command
 "test:e2e": "playwright test",
 "preview": "vite preview"
 ```
+
+# The a11y check process and scoring system
+
+This codebase is built using some familiar software engineering patterns like the factory, resolver and contract patterns. Thanks to this, it is incredibly easy to add new a11y runners. They would just need to implement the `A11yRunnerContract` contract.
+
+As a foundation, we will be writing at least one runner for the codebase, which is called `HTML CodeSniffer`.
+
+1. To perform A11y checks, this codebase uses [HTML CodeSniffer](https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/). This library already has great support for WCAG 2.1 A11y standards, so saves a lot of time.
+
+2. This codebase renders the uploaded HTML in a real browser so we can get the best results as A11y results should be as close to the user's experience as possible. It then loads the Code sniffer script into the browser and executes the a11y tests, and returns the result.
+
+3. The results are stored in the database for future access and score calculation.
+
+## Calculating the a11y score.
+
+The `A11yScoreCalculatorService` is in charge of calculating the a11y score of an HTML document based on the results of the a11y checks.
+
+It uses a simple but effective algorithm.
+
+- First, it separates all a11y reported issues into 3: critical, severe and minor. The more critical issues have the most negative impact on the final a11y score. The severe issues have a moderate negative impact on the final a11y score, while the minor issues have a minimal to no negative impact on the a11y score.
+
+- In order to apply `negative impact` , we assign weights to each issue category. The less the weight, the more it be able to tank the final score towards zero.
+
+  - Critical issues - 0.4 weight
+  - Severe issues - 0.8 weight
+  - Minor issues - 1 weight
+
+- Here's an example calculation using the weighted algorithm:
+  - A11y results: 5 critical, 1 severe, 0 minor
+  - - Total issues = 6
+  - - Weighted sum = (5 * 0.4 + 1 * 0.8) = 2.8
+  - - Average = 2.8 / 6 = 0.47
+  - - Final score = 47%
+
+# Deployment to the cloud
+
+The hosted application and API are both on a VPS bought from Hetzner. The cloud set up uses the following technologies:
+
+- Postgres database running on the same server (protected by firewalls, secure passwords, restricted access)
+- Redis database running on the same server (protected by the same)
+- Nginx for reverse proxying api calls and static hosting the frontend application
+- Let's Encrypt for managing SSL certificates for both applications
+- PM2 for running the backend API in cluster mode for minimal redundancy
+- Supervisor for running the background queue worker
+
+This application is designed to be able to horizontally scale easily, and we can achieve that in this way:
+
+- Dockerising the NodeJS API
+- Running multiple instances of the image on Railway or Kubernetes
+- Running multiple instances of the image as a queue worker
+- Separating Redis and Postgres into their own vps servers or hosted cloud database solutions
+
+
+# Improvements in the future 
+
+[ ] Add a failed state on the frontend when a job fails. The backend already tracks failures and reason for failure during job execution, and broadcasts them to the frontend, but the frontend does not display them yet.
+[ ] More E2E, Integration, API and unit tests 
+[ ] Containerise the applications for easy scaling and portability
+[ ] Fix a bug noticed in the Adonis Framework - Uploading an empty multipart form causes the entire request to just freeze with no response
+[ ] Add token API validation for better rate limiting (Super easy to do with AdonisJS as it has first party support)
