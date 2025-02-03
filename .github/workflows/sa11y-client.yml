@@ -57,7 +57,7 @@ jobs:
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         working-directory: ./sa11y-client
         env:
-          VITE_API_URL: https://sa11y-api.ikigaya.dev
+          VITE_API_URL: https://sa11y-api.ikigaya.dev/api/v1
           VITE_CLIENT_URL: https://sa11y-app.ikigaya.dev
         run: pnpm test:e2e
 
