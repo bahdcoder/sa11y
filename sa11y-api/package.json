@@ -62,14 +62,18 @@
     "@adonisjs/transmit": "^2.0.2",
     "@aws-sdk/client-s3": "^3.740.0",
     "@aws-sdk/s3-request-presigner": "^3.740.0",
+    "@langchain/core": "^0.3.37",
+    "@langchain/openai": "^0.4.2",
     "@poppinss/file-generator": "^2.1.4",
     "@rlanz/bull-queue": "^3.1.0",
     "@vinejs/vine": "^3.0.0",
+    "langchain": "^0.3.15",
     "luxon": "^3.5.0",
     "pg": "^8.13.1",
     "puppeteer": "^24.1.1",
     "reflect-metadata": "^0.2.2",
-    "shiki": "^2.2.0"
+    "shiki": "^2.2.0",
+    "zod": "^3.24.1"
   },
   "hotHook": {
     "boundaries": [

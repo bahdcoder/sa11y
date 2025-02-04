@@ -18,6 +18,9 @@ export default class A11YCheck extends BaseModel {
   declare fileKey: string
 
   @column()
+  declare enhanceWithAi: boolean
+
+  @column()
   declare name: string
 
   @column()

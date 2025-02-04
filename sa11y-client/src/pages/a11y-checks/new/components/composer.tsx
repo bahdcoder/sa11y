@@ -13,9 +13,11 @@ import { cn } from "@/lib/utils"
 import { formatBytes } from "@/pages/a11y-checks/new/utils/format-bytes"
 import { useCreateA11yCheckMutation } from "@/pages/a11y-checks/new/hooks/use-create-a11y-check-mutation"
 import { Spinner } from "@/components/spinner"
+import { Checkbox } from "@/components/ui/checkbox"
 
 export function Composer() {
   const [name, setName] = useState("")
+  const [enhanceWithAi, setEnhanceWithAi] = useState(false)
 
   const { mutate, error, isLoading } = useCreateA11yCheckMutation()
 
@@ -53,8 +55,12 @@ export function Composer() {
   })
 
   const createA11yCheckMutation = useCallback(() => {
-    mutate({ file: acceptedFiles?.[0], name })
-  }, [name, acceptedFiles, mutate])
+    mutate({
+      file: acceptedFiles?.[0],
+      name,
+      enhanceRecommendationsWithAI: enhanceWithAi,
+    })
+  }, [name, acceptedFiles, mutate, enhanceWithAi])
 
   const { onClick: rootPropsOnClick, ...rootProps } = getRootProps()
 
@@ -123,45 +129,58 @@ export function Composer() {
           value={name}
         />
 
-        <div className="w-full mt-6 flex justify-end items-center gap-4">
-          <p className="text-xs text-muted-foreground">
-            Drop an HTML file in the composer, or click to upload
-          </p>
-          <div className="flex items-center gap-1">
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button
-                    variant="outline"
-                    aria-label="Select HTML file from your computer"
-                    className="[&_svg]:size-6 w-8 h-8 rounded-full text-muted-foreground"
-                    onClick={rootPropsOnClick}
-                  >
-                    <PlusIcon />
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Upload an HTML file</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <Button
-                    aria-label="Create A11y check"
-                    disabled={createButtonIsDisabled}
-                    onClick={createA11yCheckMutation}
-                    className="[&_svg]:size-4 w-8 h-8 rounded-full"
-                  >
-                    {isLoading ? <Spinner /> : <Send />}
-                  </Button>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>Create your a11y check</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+        <div className="w-full mt-6 flex justify-between items-center gap-4">
+          <div className="flex items-center space-x-2">
+            <Checkbox
+              id="ai-runner"
+              checked={enhanceWithAi}
+              onCheckedChange={(checked) => setEnhanceWithAi(checked === true)}
+            />
+            <label
+              htmlFor="ai-runner"
+              className="text-sm mt-0.5 font-medium leading-none peer-disabled:cursor-not-allowed text-muted-foreground peer-disabled:opacity-70"
+            >
+              Enhance a11y recommendations with ai
+            </label>
+          </div>
+          <div className="flex items-center gap-4">
+            <p className="text-xs text-muted-foreground">Click to upload</p>
+            <div className="flex items-center gap-1">
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      variant="outline"
+                      aria-label="Select HTML file from your computer"
+                      className="[&_svg]:size-6 w-8 h-8 rounded-full text-muted-foreground"
+                      onClick={rootPropsOnClick}
+                    >
+                      <PlusIcon />
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Upload an HTML file</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button
+                      aria-label="Create A11y check"
+                      disabled={createButtonIsDisabled}
+                      onClick={createA11yCheckMutation}
+                      className="[&_svg]:size-4 w-8 h-8 rounded-full"
+                    >
+                      {isLoading ? <Spinner /> : <Send />}
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>Create your a11y check</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            </div>
           </div>
         </div>
       </div>

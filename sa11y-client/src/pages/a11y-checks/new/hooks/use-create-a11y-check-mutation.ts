@@ -23,13 +23,17 @@ export function useCreateA11yCheckMutation() {
   return useMutation<
     CreateA11yResponse,
     AxiosError<{ errors: { field: string; message: string }[] }>,
-    { file: File; name: string }
+    { file: File; name: string; enhanceRecommendationsWithAI?: boolean }
   >({
-    async mutationFn({ file, name }) {
+    async mutationFn({ file, name, enhanceRecommendationsWithAI }) {
       const form = new FormData()
 
       form.append("html", file)
       form.append("name", name)
+
+      if (enhanceRecommendationsWithAI) {
+        form.append("enhancer", "ai")
+      }
 
       const response = await apiClient.post("/a11y-checks", form)
 

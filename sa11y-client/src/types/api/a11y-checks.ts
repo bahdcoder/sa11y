@@ -13,5 +13,6 @@ export interface A11yResult {
   type: "warning" | "error" | "notice" | "unknown"
   message: string
   code: string
+  aiRecommendation?: string
   element: string
 }

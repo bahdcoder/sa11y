@@ -52,4 +52,11 @@ export default await Env.create(new URL('../', import.meta.url), {
   REDIS_HOST: Env.schema.string({ format: 'host' }),
   REDIS_PORT: Env.schema.number(),
   REDIS_PASSWORD: Env.schema.string.optional(),
+
+  /*
+  |----------------------------------------------------------
+  | Variables for using the ai a11y runner
+  |----------------------------------------------------------
+  */
+  OPENAI_API_KEY: Env.schema.string(),
 })

@@ -2,8 +2,8 @@
 
 Sa11y is a comprehensive accessibility testing platform that helps you check and score the accessibility of HTML documents. The platform consists of two main components: a backend API (sa11y-api) and a frontend client (sa11y-client).
 
-[View the hosted API application](https://sa11y-api.ikigaya.dev/)
-[View the hosted client application](https://sa11y-app.ikigaya.dev/)
+- [View the hosted API application](https://sa11y-api.ikigaya.dev/)
+- [View the hosted client application](https://sa11y-app.ikigaya.dev/)
 
 ![System Architecture](./assets/sa11y-upload.png)
 ![System Architecture](./assets/sa11y-report.png)
@@ -125,7 +125,7 @@ It uses a simple but effective algorithm.
 - Here's an example calculation using the weighted algorithm:
   - A11y results: 5 critical, 1 severe, 0 minor
   - - Total issues = 6
-  - - Weighted sum = (5 * 0.4 + 1 * 0.8) = 2.8
+  - - Weighted sum = (5 _ 0.4 + 1 _ 0.8) = 2.8
   - - Average = 2.8 / 6 = 0.47
   - - Final score = 47%
 
@@ -147,11 +147,18 @@ This application is designed to be able to horizontally scale easily, and we can
 - Running multiple instances of the image as a queue worker
 - Separating Redis and Postgres into their own vps servers or hosted cloud database solutions
 
+# Enhancements with Artificial intelligence
 
-# Improvements in the future 
+With LLMS, we can get the most critical accessibility issues, pass in some context around the WCAG rule and element, and ask the LLM to make highly accurate recommendations on how to fix these issues.
+
+![System Architecture](./assets/ai-recommendations.png)
+
+On the composer, if the user selects `Enhance a11y recommendations with ai`, after running the a11y checks, we call the LLM with a list of all the critical issues and use a prompt and structured output to ask the LLM to make recommendations on how to fix these issues.
+
+# Improvements in the future
 
 - [ ] Add a failed state on the frontend when a job fails. The backend already tracks failures and reason for failure during job execution, and broadcasts them to the frontend, but the frontend does not display them yet.
-- [ ] More E2E, Integration, API and unit tests 
+- [ ] More E2E, Integration, API and unit tests
 - [ ] Containerise the applications for easy scaling and portability
 - [ ] Fix a bug noticed in the Adonis Framework - Uploading an empty multipart form causes the entire request to just freeze with no response
 - [ ] Add token API validation for better rate limiting (Super easy to do with AdonisJS as it has first party support)

@@ -1,13 +1,18 @@
 import A11YCheck from '#models/a11y_check'
 import A11yResult from '#models/a11y_result'
+import z from 'zod'
 import { A11yReportContract } from '#services/a11y/contracts/a11y_report_contract'
 import app from '@adonisjs/core/services/app'
 import logger from '@adonisjs/core/services/logger'
 import drive from '@adonisjs/drive/services/main'
-
+import { ChatOpenAI } from '@langchain/openai'
+import { HumanMessage, SystemMessage } from '@langchain/core/messages'
 import Puppeteer from 'puppeteer'
 
+import { fixRecommendationsPrompt } from '#services/a11y/enhancers/ai/fix_recommendations_prompt'
 export class A11yService {
+  protected model = new ChatOpenAI({ model: 'gpt-4o-mini' })
+
   /**
    * Executes an accessibility check on an HTML file
    *
@@ -48,8 +53,12 @@ export class A11yService {
 
     const runner = resolver.resolve(a11yCheck.runner)
 
-    await runner.setup(page)
-    const results = await runner.analyze(page)
+    await runner.setup(page, uploadedFileUrl)
+    let results = await runner.analyze(page, uploadedFileUrl)
+
+    if (a11yCheck.enhanceWithAi) {
+      results = await this.enhanceResultsWithAi(results)
+    }
 
     await a11yCheck.complete()
 
@@ -59,9 +68,12 @@ export class A11yService {
     const chunkedResults = this.chunkResults(results)
 
     for (const chunk of chunkedResults) {
-      const insert = chunk.map((result) => ({
-        ...result,
+      const insert = chunk.map(({ type, code, message, recommendation }) => ({
+        type,
+        code,
+        message,
         a11yCheckId: a11yCheck.id,
+        aiRecommendation: recommendation,
       }))
 
       await A11yResult.createMany(insert)
@@ -82,5 +94,46 @@ export class A11yService {
     }
 
     return chunkedArray
+  }
+
+  protected async enhanceResultsWithAi(results: A11yReportContract[]) {
+    const llm = this.model.withStructuredOutput(
+      z.object({
+        recommendations: z.array(
+          z.object({
+            'issue-id': z.string().describe('The unique Id of this accessibility issue'),
+            'recommendation': z
+              .string()
+              .describe('A detailed recommendation on how to fix the specified issue'),
+          })
+        ),
+      })
+    )
+
+    const issues = results.filter((result) => result.type === 'error')
+    const nonCriticalIssues = results.filter((result) => result.type !== 'error')
+
+    logger.debug(`Calling the LLM with ${issues.length} issues for fix recommendations`)
+
+    const formattedLlmInput = issues.map((issue, idx) => ({
+      'issue-id': idx,
+      'issue': issue.message,
+      ...(issue.element.length < 200 ? { element: issue.element } : {}),
+    }))
+
+    const output = await llm.invoke([
+      new SystemMessage(fixRecommendationsPrompt),
+      new HumanMessage(JSON.stringify(formattedLlmInput, null, 2)),
+    ])
+
+    logger.debug(`LLM call successful, with ${output?.recommendations?.length} fix recommendations`)
+
+    return [
+      ...issues.map((issue, idx) => ({
+        ...issue,
+        recommendation: output.recommendations[idx]?.recommendation,
+      })),
+      ...nonCriticalIssues,
+    ]
   }
 }

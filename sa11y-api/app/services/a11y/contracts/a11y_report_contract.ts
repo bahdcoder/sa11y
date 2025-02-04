@@ -3,4 +3,5 @@ export interface A11yReportContract {
   message: string
   code: string
   element: string
+  recommendation?: string
 }

@@ -27,6 +27,7 @@ export default class A11yController {
     const {
       html,
       name,
+      enhancer,
       reporter = 'json',
       runner = 'html-code-sniffer',
     } = await request.validateUsing(CreateA11yCheckValidator)
@@ -45,6 +46,7 @@ export default class A11yController {
       runner,
       name,
       reporter,
+      enhanceWithAi: enhancer === 'ai' ? true : false,
     })
 
     await queue.dispatch(ProcessAllyCheckJob, {

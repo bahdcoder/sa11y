@@ -18,6 +18,9 @@ export default class A11yResult extends BaseModel {
   declare message: string
 
   @column()
+  declare aiRecommendation: string
+
+  @column()
   declare element: string
 
   @column()

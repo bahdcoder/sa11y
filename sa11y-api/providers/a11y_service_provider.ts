@@ -2,6 +2,7 @@ import { A11yScoreCalculatorService } from '#services/a11y/a11y_score_calculator
 import { A11yService } from '#services/a11y/a11y_service'
 import { A11yRunnerResolverContract } from '#services/a11y/contracts/a11y_runner_resolver_contract'
 import { RunnerResolver } from '#services/a11y/resolvers/runner_resolver'
+import { AiRunner } from '#services/a11y/runners/ai_runner/ai_runner'
 import { HTMLCodeSnifferRunner } from '#services/a11y/runners/html_code_sniffer_runner'
 import type { ApplicationService } from '@adonisjs/core/types'
 
@@ -24,6 +25,7 @@ export default class A11yServiceProvider {
       const resolver = new RunnerResolver()
 
       resolver.register('html-code-sniffer', new HTMLCodeSnifferRunner())
+      resolver.register('ai', new AiRunner())
       // register ai runner, axe runner, or any runners in future
 
       return resolver

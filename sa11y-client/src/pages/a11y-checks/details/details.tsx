@@ -141,6 +141,14 @@ export default function A11yCheckDetailsPage() {
                                       {result?.code}
                                     </div>
                                   ) : null}
+                                  {result?.aiRecommendation ? (
+                                    <div className="text-orange-700 bg-orange-100 p-4 rounded-lg mt-4">
+                                      <span className="text-orange-800 font-bold">
+                                        AI recommendation:
+                                      </span>{" "}
+                                      {result?.aiRecommendation}
+                                    </div>
+                                  ) : null}
                                 </AccordionContent>
                               </AccordionItem>
                             ))}

@@ -9,5 +9,6 @@ export const CreateA11yCheckValidator = vine.compile(
     name: vine.string().minLength(3).maxLength(24),
     runner: vine.enum(['html-code-sniffer', 'ai']).optional(),
     reporter: vine.enum(['json', 'csv']).optional(),
+    enhancer: vine.enum(['ai']).optional(),
   })
 )
