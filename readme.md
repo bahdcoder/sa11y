@@ -183,3 +183,17 @@ docker run -p 8080:8080 \
   -e ENV_2=xxx \
 sa11y-api
 ```
+
+### Building images in CI (Github actions)
+
+For every code approved and merged into master, the `docker` job on Github actions builds a new image and pushes it to dockerhub.
+
+[View the dockerhub image for sa11y-api here](https://hub.docker.com/r/bahdcoder/sa11y-api/)
+
+In future, we may set up hooks to automatically release this new image to a Kubernetes cluster.
+
+## About docker and the frontend
+
+In this application, we do not need to dockerise the frontend as it is simply a static site. We cannot necessarily horizontally scale it like the backend. Rather, we scale it by using a powerful global CDN like Cloudfront or Bunny.net
+
+So in future, we may build the frontend application, zip it, and upload to Cloudfront from Github actions, and connect a load balancer to point to Cloudfront, and that would be enough to scale it as much as we want. We will focus on scaling the CDN and not the static files themselves.
