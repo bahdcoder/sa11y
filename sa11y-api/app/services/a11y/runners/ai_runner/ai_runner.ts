@@ -13,7 +13,7 @@ export class AiRunner implements A11yRunnerContract {
   async analyze(_page: Page, url: string) {
     const content = await this.fetchHTMLContent(url)
 
-    const results = await this.model.invoke([
+    await this.model.invoke([
       new SystemMessage(accessibilityCheckerPrompt),
       new HumanMessage(`Current HTML Content: \n ${content}\n`),
     ])

@@ -162,3 +162,24 @@ On the composer, if the user selects `Enhance a11y recommendations with ai`, aft
 - [ ] Containerise the applications for easy scaling and portability
 - [ ] Fix a bug noticed in the Adonis Framework - Uploading an empty multipart form causes the entire request to just freeze with no response
 - [ ] Add token API validation for better rate limiting (Super easy to do with AdonisJS as it has first party support)
+
+# Docker and containerisation
+
+In order to horizontally scale, we've dockerised the application to create a portable image. Platforms like Kubernetes, Nomad or Railway (Managed PAAS) can easily execute and scale instances of the resulting image.
+
+## Backend image build.
+
+To build the backend image, run the following command at the root of the backend API folder:
+
+```bash
+docker build -t sa11y-api .
+```
+
+After that you may execute the resulting build image using the following command. Be sure to define all needed environment variables in order to run the container correctly. You may see the needed environment variables in the `.env.example` file.
+
+```
+docker run -p 8080:8080 \
+  -e ENV_1=xxx \
+  -e ENV_2=xxx \
+sa11y-api
+```
